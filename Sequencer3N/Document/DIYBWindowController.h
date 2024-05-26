@@ -42,11 +42,13 @@
 
 @property (weak) DIYBGrid* ref1Grid;
 @property (weak) DIYBGrid* ref2Grid;
+@property (weak) DIYBGrid* ref3Grid;
 @property (weak) DIYBGrid* activeGrid;
 @property (assign,nonatomic)BOOL gridEnable;
 
 @property (copy,nonatomic) NSString* ref1Name;
 @property (copy,nonatomic) NSString* ref2Name;
+@property (copy,nonatomic) NSString* ref3Name;
 @property (copy,nonatomic) NSString* activeName;
 @property (strong,nonatomic) NSColor* activeColor;
 @property (weak) NSArray* gridNames;

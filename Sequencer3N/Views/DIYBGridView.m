@@ -32,7 +32,7 @@ CGFloat temp_currentTime = 0.0 ;
         // Initialization code here.
         [self bind:@"selectedColor" toObject:[DIYBPrefData sharedInstance] withKeyPath:@"selectionColor" options:nil];
         _dash[0]=12.0;
-        _dash[1]=24.0;
+        _dash[1]=36.0;
         [self setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
         [self setAutoresizesSubviews:YES];
         [self buildPaths];
@@ -65,16 +65,21 @@ CGFloat temp_currentTime = 0.0 ;
     _ref1Path=path;
     _ref2Path=[NSBezierPath bezierPath];
     [_ref2Path appendBezierPath:path];
+    _ref3Path = [NSBezierPath bezierPath];
+    [_ref3Path appendBezierPath:path];
+    
     _activePath=[NSBezierPath bezierPath];
     [_activePath appendBezierPath:path];
     
     [_ref1Path setLineWidth:2.0];
     [_ref2Path setLineWidth:2.0];
+    [_ref2Path setLineWidth:2.0];
     [_activePath setLineWidth:2.0];
     
     [_ref1Path setLineDash:_dash count:2 phase:0.0];
     [_ref2Path setLineDash:_dash count:2 phase:12.0];
-    [_activePath setLineDash:_dash count:2 phase:24.0];
+    [_ref3Path setLineDash:_dash count:2 phase:24.0];
+    [_activePath setLineDash:_dash count:2 phase:36.0];
     
     _pathNow =[NSBezierPath bezierPath];
     [_pathNow moveToPoint:NSMakePoint(0.0, 0.0)];
@@ -106,6 +111,7 @@ CGFloat temp_currentTime = 0.0 ;
         [self bind:@"dotsPerSecond" toObject:newWindow.windowController withKeyPath:@"dotsPerSecond" options:nil];
         [self bind:@"ref1Grid" toObject:newWindow.windowController withKeyPath:@"ref1Grid" options:nil];
         [self bind:@"ref2Grid" toObject:newWindow.windowController withKeyPath:@"ref2Grid" options:nil];
+        [self bind:@"ref3Grid" toObject:newWindow.windowController withKeyPath:@"ref3Grid" options:nil];
         [self bind:@"activeGrid" toObject:newWindow.windowController withKeyPath:@"activeGrid" options:nil];
     }
     else
@@ -113,6 +119,7 @@ CGFloat temp_currentTime = 0.0 ;
         [self unbind:@"dotsPerSecond"];
         [self unbind:@"ref1Grid"];
         [self unbind:@"ref2Grid"];
+        [self unbind:@"ref3Grid"];
         [self unbind:@"activeGrid"];
     }
 }
@@ -134,6 +141,11 @@ CGFloat temp_currentTime = 0.0 ;
     {
         [[self.ref2Grid drawColor] setStroke];
         [self drawGrid:self.ref2Grid predicate:predicate refPath:_ref2Path];
+    }
+    if (self.ref3Grid)
+    {
+        [[self.ref3Grid drawColor] setStroke];
+        [self drawGrid:self.ref3Grid predicate:predicate refPath:_ref3Path];
     }
     if (self.activeGrid)
     {

@@ -20,10 +20,12 @@
 @property (strong) NSColor* background;
 @property (weak,nonatomic) DIYBGrid* ref1Grid;
 @property (weak,nonatomic) DIYBGrid* ref2Grid;
+@property (weak,nonatomic) DIYBGrid* ref3Grid;
 @property (weak,nonatomic) DIYBGrid* activeGrid;
 @property (strong,nonatomic) NSColor* selectedColor;
 @property (strong) NSBezierPath* ref1Path;
 @property (strong) NSBezierPath* ref2Path;
+@property (strong) NSBezierPath* ref3Path;
 @property (strong) NSBezierPath* activePath;
 @property (strong) NSBezierPath* pathNow;
 

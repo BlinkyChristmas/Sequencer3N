@@ -415,6 +415,18 @@ static void *RowHeightContext=&RowHeightContext;
     [_gridView setNeedsDisplay:YES];
 }
 //====================================================================================
+- (void)setRef3Name:(NSString *)ref3Name
+{
+    _ref3Name=[ref3Name copy];
+    if (ref3Name)
+    {
+        self.ref3Grid=[_seqFile.grids objectForKey:ref3Name];
+    }
+    else
+        self.ref3Grid=nil;
+    [_gridView setNeedsDisplay:YES];
+}
+//====================================================================================
 - (void)setActiveName:(NSString *)activeName
 {
     _activeName=[activeName copy];
@@ -466,6 +478,10 @@ static void *RowHeightContext=&RowHeightContext;
     else if ( [sender tag]==1)
     {
         self.ref2Name=nil;
+    }
+    else if ( [sender tag]==2)
+    {
+        self.ref3Name=nil;
     }
     else
         self.activeGrid=nil;
@@ -740,7 +756,12 @@ static void *RowHeightContext=&RowHeightContext;
         self.ref2Name=nil;
         [_gridView setNeedsDisplay:YES];
     }
-   
+    if ([_ref3Name isEqualToString:grid.name])
+    {
+        self.ref3Name=nil;
+        [_gridView setNeedsDisplay:YES];
+    }
+
 }
 //========================================================================
 - (IBAction)createSequenceDialog:(id)sender
