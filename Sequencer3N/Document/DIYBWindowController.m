@@ -1047,6 +1047,7 @@ static void *RowHeightContext=&RowHeightContext;
 - (void)windowWillClose:(NSNotification *)notification
 {
     [_mediaPlayer play:NO] ;
+    [_visualController close] ;
 }
 //=============================================================================================
 - (IBAction)filterItems:(id)sender
@@ -1079,5 +1080,8 @@ static void *RowHeightContext=&RowHeightContext;
      }];
 
 }
+
+// =========================================================================================
+
 
 @end
