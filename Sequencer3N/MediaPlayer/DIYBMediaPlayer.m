@@ -52,7 +52,7 @@ static void *AVSPPlayerDurationContext = &AVSPPlayerDurationContext;
 
         //Create the player
         _player=[[AVPlayer alloc] init];
-        _player.volume=.1;
+        _player.volume=.25;
         _updateRate=.050;
         _playBackRate=1.0;
         _loadError=NO;
