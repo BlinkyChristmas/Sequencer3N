@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DIYBWindowController">
+            <connections>
+                <outlet property="effectScroll" destination="FyC-KR-CVX" id="t6G-mc-YZZ"/>
+                <outlet property="mediaPlayer" destination="KaL-lT-nmh" id="b3E-sK-T73"/>
+                <outlet property="sequenceItemScroll" destination="qh0-tD-ABu" id="a6s-SW-tFy"/>
+                <outlet property="stepTime" destination="QMq-2C-Fat" id="m95-ZW-sVK"/>
+                <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="xOd-HO-29H" userLabel="Window">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="133" y="235" width="1653" height="566"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="5120" height="1415"/>
+            <value key="minSize" type="size" width="94" height="86"/>
+            <view key="contentView" id="gIp-Ho-8D9">
+                <rect key="frame" x="0.0" y="0.0" width="1653" height="566"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <splitView dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yXX-BU-VN2">
+                        <rect key="frame" x="20" y="20" width="1613" height="454"/>
+                        <subviews>
+                            <customView id="vh1-qQ-Qzx">
+                                <rect key="frame" x="0.0" y="0.0" width="203" height="454"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-tD-ABu" customClass="SynchroScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="422"/>
+                                        <clipView key="contentView" id="8hm-kV-0Bp">
+                                            <rect key="frame" x="1" y="1" width="186" height="405"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXT-hC-iZi">
+                                                    <rect key="frame" x="0.0" y="-24" width="200" height="429"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </view>
+                                            </subviews>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="arJ-yN-EjV">
+                                            <rect key="frame" x="1" y="406" width="186" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="kIx-4f-R0r">
+                                            <rect key="frame" x="187" y="1" width="15" height="405"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qh0-tD-ABu" secondAttribute="trailing" id="2J3-W5-bkv"/>
+                                    <constraint firstItem="qh0-tD-ABu" firstAttribute="top" secondItem="vh1-qQ-Qzx" secondAttribute="top" constant="32" id="BB5-2m-jif"/>
+                                    <constraint firstAttribute="bottom" secondItem="qh0-tD-ABu" secondAttribute="bottom" id="KcU-e7-cou"/>
+                                    <constraint firstItem="qh0-tD-ABu" firstAttribute="leading" secondItem="vh1-qQ-Qzx" secondAttribute="leading" id="naz-lf-fJG"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="xfG-Wc-WSm"/>
+                                </constraints>
+                            </customView>
+                            <customView id="I8e-9A-W2l">
+                                <rect key="frame" x="213" y="0.0" width="1400" height="454"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyC-KR-CVX" customClass="SynchroScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1400" height="454"/>
+                                        <clipView key="contentView" id="xfb-kg-9gK">
+                                            <rect key="frame" x="1" y="1" width="1383" height="437"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYK-Cc-9cY">
+                                                    <rect key="frame" x="0.0" y="-24" width="1391" height="461"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </view>
+                                            </subviews>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="T7u-Ma-9vz">
+                                            <rect key="frame" x="1" y="438" width="1383" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Nox-jv-pBt">
+                                            <rect key="frame" x="1384" y="1" width="15" height="437"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FyC-KR-CVX" secondAttribute="bottom" id="DjC-K7-dys"/>
+                                    <constraint firstItem="FyC-KR-CVX" firstAttribute="leading" secondItem="I8e-9A-W2l" secondAttribute="leading" id="hId-ab-IHe"/>
+                                    <constraint firstItem="FyC-KR-CVX" firstAttribute="top" secondItem="I8e-9A-W2l" secondAttribute="top" id="u7s-Gy-2tU"/>
+                                    <constraint firstAttribute="trailing" secondItem="FyC-KR-CVX" secondAttribute="trailing" id="zCa-8P-HCt"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <holdingPriorities>
+                            <real value="250"/>
+                            <real value="250"/>
+                        </holdingPriorities>
+                    </splitView>
+                    <slider toolTip="Volume" verticalHuggingPriority="750" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Vgr-01-lsi">
+                        <rect key="frame" x="275" y="489" width="322" height="27"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1.5" doubleValue="1.5" tickMarkPosition="above" sliderType="linear" id="hU5-Yy-d4i"/>
+                        <connections>
+                            <binding destination="KaL-lT-nmh" name="value" keyPath="volume" id="c6g-pm-x8h"/>
+                        </connections>
+                    </slider>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QnG-cu-IJh">
+                        <rect key="frame" x="86" y="487" width="67" height="32"/>
+                        <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gin-Ad-EYN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="EV1-Bc-138"/>
+                        </constraints>
+                        <connections>
+                            <action selector="playButton:" target="-2" id="dp9-Yz-a8U"/>
+                            <binding destination="KaL-lT-nmh" name="title" keyPath="buttonTitle" id="a18-Mp-bhK"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isLoaded" id="w1F-EV-B7V"/>
+                            <binding destination="-2" name="enabled2" keyPath="isRendering" previousBinding="w1F-EV-B7V" id="LZd-3Y-t1g">
+                                <dictionary key="options">
+                                    <integer key="NSMultipleValuesPlaceholder" value="-1"/>
+                                    <integer key="NSNoSelectionPlaceholder" value="-1"/>
+                                    <integer key="NSNotApplicablePlaceholder" value="-1"/>
+                                    <integer key="NSNullPlaceholder" value="-1"/>
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button toolTip="Set Reset Time" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C89-9T-1g8">
+                        <rect key="frame" x="735" y="487" width="55" height="32"/>
+                        <buttonCell key="cell" type="push" title="Set" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qdm-Tq-khz">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="resetPlayTime:" target="-2" id="802-No-0KY"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="wrx-3P-6HD">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button toolTip="Clear reference grid 1 selection" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QqZ-Cc-Q7O">
+                        <rect key="frame" x="1045" y="519" width="66" height="32"/>
+                        <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Y9J-MJ-bxZ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clearGrid:" target="-2" id="DlG-mT-1Ps"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="Nes-I1-92f">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button toolTip="Clear reference grid 2 selection" tag="1" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Ik-VF-fgv">
+                        <rect key="frame" x="1300" y="519" width="66" height="32"/>
+                        <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2p4-uF-clR">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clearGrid:" target="-2" id="KPR-BT-def"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="Uh4-gd-meA">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button toolTip="Clear active grid selection" tag="2" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7d8-Ke-7dM">
+                        <rect key="frame" x="1045" y="487" width="66" height="32"/>
+                        <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1Zz-WX-5kW">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clearGrid:" target="-2" id="dWz-77-qcT"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="PGS-6D-Euj">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yaQ-Gf-ZuY">
+                        <rect key="frame" x="1360" y="487" width="201" height="32"/>
+                        <buttonCell key="cell" type="push" title="Erase Scratch Lines" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q5e-Ga-xHo">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="clearScratch:" target="-2" id="86j-C9-Psh"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="Bts-0K-vrO">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="tf8-wW-AU9">
+                        <rect key="frame" x="152" y="496" width="117" height="18"/>
+                        <buttonCell key="cell" type="check" title="Render on play" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Bir-Ju-kCb">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="renderOnPlay" id="9UV-LM-feb"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="0XS-ai-9is">
+                        <rect key="frame" x="940" y="496" width="104" height="18"/>
+                        <buttonCell key="cell" type="check" title="Grid Enabled" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Rve-fp-OiG">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="gridEnable" id="J9j-Ab-lUd"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="zus-EM-oDf">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="0na-K4-0RL">
+                        <rect key="frame" x="634" y="496" width="57" height="18"/>
+                        <buttonCell key="cell" type="check" title="Mute" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="wFq-kL-4xC">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="KaL-lT-nmh" name="value" keyPath="muted" id="S1O-8Y-dln"/>
+                        </connections>
+                    </button>
+                    <textField toolTip="Frame rate (sec)" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7XJ-cc-btG">
+                        <rect key="frame" x="17" y="526" width="54" height="21"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="esm-Up-Dcd">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="3" maximumFractionDigits="3" id="kxx-31-Afp"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="frameRate" id="OE2-aL-VhF"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="a44-Dh-PhK">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Playback Rate" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0wS-UT-WfK">
+                        <rect key="frame" x="17" y="494" width="54" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="YN0-gR-2fs"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="OaA-6L-w7y">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" maximumFractionDigits="3" id="SXw-hv-mvf"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="KaL-lT-nmh" name="value" keyPath="playBackRate" id="2ex-2G-FQK"/>
+                        </connections>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VEX-Sg-uXJ">
+                        <rect key="frame" x="69" y="491" width="19" height="28"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" increment="0.10000000000000001" minValue="0.10000000000000001" maxValue="1" doubleValue="0.10000000000000001" id="Jzh-90-0lt"/>
+                        <connections>
+                            <binding destination="KaL-lT-nmh" name="value" keyPath="playBackRate" id="H34-Vl-kFV"/>
+                        </connections>
+                    </stepper>
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U7M-Y6-CIp">
+                        <rect key="frame" x="89" y="523" width="28" height="26"/>
+                        <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C2G-sr-jOq">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectMedia:" target="-2" id="KHF-Th-e44"/>
+                        </connections>
+                    </button>
+                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qIy-rq-rfN">
+                        <rect key="frame" x="115" y="526" width="480" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="480" id="sdH-hT-WKs"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="mMt-kR-ux9">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="mediaFile" id="3dr-I3-DDm"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Duration" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ism-ea-1AR">
+                        <rect key="frame" x="636" y="526" width="55" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="3kZ-AM-1uJ"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="472-qt-wRu">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="3" maximumFractionDigits="3" id="gkU-OZ-P2p"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="duration" id="aP3-ec-zt6"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Current Time" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-14-b3C">
+                        <rect key="frame" x="791" y="526" width="71" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="Zlc-y2-ver"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="RLQ-cZ-fJp">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="3" maximumFractionDigits="3" id="HPM-D2-SQp"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="KaL-lT-nmh" name="value" keyPath="currentTime" previousBinding="hR5-Ts-gBf" id="zCz-Dx-YqZ"/>
+                            <binding destination="-2" name="maxValue" keyPath="duration" id="hR5-Ts-gBf"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="2O1-1X-ody">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QMq-2C-Fat">
+                        <rect key="frame" x="860" y="523" width="19" height="28"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="FCu-rf-s7B"/>
+                        <connections>
+                            <binding destination="KaL-lT-nmh" name="value" keyPath="currentTime" previousBinding="NCQ-TA-WuZ" id="ewl-uS-suJ"/>
+                            <binding destination="-2" name="maxValue" keyPath="duration" id="NCQ-TA-WuZ"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="eDP-Xf-fFh">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </stepper>
+                    <textField toolTip="Reset Time" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XII-4H-G0g">
+                        <rect key="frame" x="791" y="494" width="71" height="21"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="JAT-ra-K7R">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" usesGroupingSeparator="NO" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="3" maximumFractionDigits="3" id="2oH-NI-btp"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="maxValue" keyPath="duration" id="p5b-TX-AC9"/>
+                            <binding destination="-2" name="value" keyPath="resetTime" previousBinding="p5b-TX-AC9" id="heX-L2-loy"/>
+                        </connections>
+                    </textField>
+                    <textField toolTip="Scale" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HQI-ee-2qB">
+                        <rect key="frame" x="1562" y="526" width="66" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="iGU-Uo-UN1"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="d5G-gY-sbi">
+                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="percent" minimumIntegerDigits="1" maximumIntegerDigits="309" id="OmC-5z-c5p">
+                                <integer key="multiplier" value="100"/>
+                                <real key="minimum" value="0.01"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="ZyT-GT-2Ab">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="-2" name="value" keyPath="scale" id="lQq-FM-JKm"/>
+                        </connections>
+                    </textField>
+                    <popUpButton toolTip="Active Grid" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y2M-dK-cCN">
+                        <rect key="frame" x="1109" y="490" width="194" height="25"/>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9Gr-Ie-l0g" id="Nkm-9H-bUW">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="qkO-WU-t8W">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="9Gr-Ie-l0g"/>
+                                    <menuItem title="Item 2" id="wPM-MY-b9o"/>
+                                    <menuItem title="Item 3" id="9IG-vA-jS4"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="-2" name="selectedValue" keyPath="activeName" previousBinding="IgT-Hb-0RK" id="UCZ-mG-Sfj"/>
+                            <binding destination="DuE-wL-Iyu" name="contentValues" keyPath="arrangedObjects" id="IgT-Hb-0RK"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="IBg-HN-hTs">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </popUpButton>
+                    <popUpButton toolTip="Reference Grid 1" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="790-wH-VQx">
+                        <rect key="frame" x="1109" y="522" width="194" height="25"/>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="sG7-Yp-mMV" id="g7a-0Y-Vo7">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="bUm-mh-wxj">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="sG7-Yp-mMV"/>
+                                    <menuItem title="Item 2" id="JXe-pA-kTi"/>
+                                    <menuItem title="Item 3" id="BIb-9N-HmD"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="187" id="Tjk-F2-6SM"/>
+                        </constraints>
+                        <connections>
+                            <binding destination="DuE-wL-Iyu" name="contentValues" keyPath="arrangedObjects" id="yZT-7k-vi7"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="A8J-5V-MKS">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="-2" name="selectedValue" keyPath="ref1Name" previousBinding="yZT-7k-vi7" id="1e0-XW-Wcf"/>
+                        </connections>
+                    </popUpButton>
+                    <popUpButton toolTip="Reference Grid 2" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VNc-hL-QdN">
+                        <rect key="frame" x="1364" y="522" width="194" height="25"/>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="5zt-z9-VmD" id="Vip-Dm-WrI">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="0QP-tB-QF7">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="5zt-z9-VmD"/>
+                                    <menuItem title="Item 2" id="IvU-F2-kGU"/>
+                                    <menuItem title="Item 3" id="uTr-cG-PnP"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="187" id="nOD-ZU-Kgy"/>
+                        </constraints>
+                        <connections>
+                            <binding destination="DuE-wL-Iyu" name="contentValues" keyPath="arrangedObjects" id="C4O-6F-tJL"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="0J8-li-m9r">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="-2" name="selectedValue" keyPath="ref2Name" previousBinding="C4O-6F-tJL" id="ANf-iq-iN8"/>
+                        </connections>
+                    </popUpButton>
+                    <colorWell toolTip="Active grid color" translatesAutoresizingMaskIntoConstraints="NO" id="JaQ-K8-5CJ">
+                        <rect key="frame" x="1304" y="490" width="58" height="28"/>
+                        <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="activeColor" id="t8q-15-CFR"/>
+                            <binding destination="KaL-lT-nmh" name="enabled" keyPath="isPlaying" id="Cn1-eV-XOw">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </colorWell>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yaQ-Gf-ZuY" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="13Q-Ch-F0N"/>
+                    <constraint firstAttribute="trailing" secondItem="yXX-BU-VN2" secondAttribute="trailing" constant="20" symbolic="YES" id="23v-1Q-rk5"/>
+                    <constraint firstItem="7XJ-cc-btG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="17" id="27X-Pe-WvG"/>
+                    <constraint firstItem="Vgr-01-lsi" firstAttribute="trailing" secondItem="qIy-rq-rfN" secondAttribute="trailing" id="29c-Tp-b4B"/>
+                    <constraint firstItem="Ism-ea-1AR" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="3cV-X0-n28"/>
+                    <constraint firstItem="Vgr-01-lsi" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="4Gp-HT-WOu"/>
+                    <constraint firstItem="7d8-Ke-7dM" firstAttribute="leading" secondItem="QqZ-Cc-Q7O" secondAttribute="leading" id="5EE-RA-FO5"/>
+                    <constraint firstItem="Y2M-dK-cCN" firstAttribute="leading" secondItem="790-wH-VQx" secondAttribute="leading" id="5Jv-AW-Ir4"/>
+                    <constraint firstItem="QnG-cu-IJh" firstAttribute="leading" secondItem="U7M-Y6-CIp" secondAttribute="leading" id="6J5-gy-P7M"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HQI-ee-2qB" secondAttribute="trailing" constant="25" id="7SN-Du-KMI"/>
+                    <constraint firstItem="7d8-Ke-7dM" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="95C-sR-MVJ"/>
+                    <constraint firstItem="0na-K4-0RL" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="9Bj-RK-yN3"/>
+                    <constraint firstItem="JaQ-K8-5CJ" firstAttribute="leading" secondItem="1Ik-VF-fgv" secondAttribute="leading" id="Bhg-OH-5EU"/>
+                    <constraint firstItem="Y2M-dK-cCN" firstAttribute="trailing" secondItem="790-wH-VQx" secondAttribute="trailing" id="BxG-ib-kZJ"/>
+                    <constraint firstItem="QnG-cu-IJh" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="CUU-TI-mxW"/>
+                    <constraint firstItem="XII-4H-G0g" firstAttribute="leading" secondItem="C89-9T-1g8" secondAttribute="trailing" constant="8" symbolic="YES" id="Ctm-2F-dSx"/>
+                    <constraint firstItem="QqZ-Cc-Q7O" firstAttribute="leading" secondItem="QMq-2C-Fat" secondAttribute="trailing" constant="176" id="D45-g0-7vh"/>
+                    <constraint firstItem="VEX-Sg-uXJ" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="E7p-Up-bjC"/>
+                    <constraint firstItem="0na-K4-0RL" firstAttribute="leading" secondItem="Ism-ea-1AR" secondAttribute="leading" id="Fp6-6d-G0n"/>
+                    <constraint firstItem="0wS-UT-WfK" firstAttribute="leading" secondItem="7XJ-cc-btG" secondAttribute="leading" id="HED-UB-WVd"/>
+                    <constraint firstItem="yXX-BU-VN2" firstAttribute="top" secondItem="7d8-Ke-7dM" secondAttribute="bottom" constant="20" symbolic="YES" id="HN9-DE-ZHT"/>
+                    <constraint firstItem="1Ik-VF-fgv" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="Iar-bl-AEu"/>
+                    <constraint firstItem="VEX-Sg-uXJ" firstAttribute="leading" secondItem="0wS-UT-WfK" secondAttribute="trailing" constant="1" id="IcA-FX-XJN"/>
+                    <constraint firstItem="QqZ-Cc-Q7O" firstAttribute="top" secondItem="gIp-Ho-8D9" secondAttribute="top" constant="20" symbolic="YES" id="Iog-qA-jTW"/>
+                    <constraint firstItem="0na-K4-0RL" firstAttribute="trailing" secondItem="Ism-ea-1AR" secondAttribute="trailing" id="IwD-Or-rLP"/>
+                    <constraint firstItem="7d8-Ke-7dM" firstAttribute="leading" secondItem="0XS-ai-9is" secondAttribute="trailing" constant="8" symbolic="YES" id="JB6-qa-h6m"/>
+                    <constraint firstItem="HQI-ee-2qB" firstAttribute="leading" secondItem="VNc-hL-QdN" secondAttribute="trailing" constant="8" symbolic="YES" id="KRx-7h-BNY"/>
+                    <constraint firstItem="XII-4H-G0g" firstAttribute="leading" secondItem="W0O-14-b3C" secondAttribute="leading" id="MfL-RG-dQD"/>
+                    <constraint firstItem="7d8-Ke-7dM" firstAttribute="top" secondItem="QqZ-Cc-Q7O" secondAttribute="bottom" constant="12" symbolic="YES" id="MkN-wb-OWa"/>
+                    <constraint firstItem="qIy-rq-rfN" firstAttribute="leading" secondItem="U7M-Y6-CIp" secondAttribute="trailing" constant="2" id="NLX-EZ-TcM"/>
+                    <constraint firstItem="0na-K4-0RL" firstAttribute="leading" secondItem="Vgr-01-lsi" secondAttribute="trailing" constant="41" id="Njb-q2-6cR"/>
+                    <constraint firstItem="QMq-2C-Fat" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="P7S-5D-z5P"/>
+                    <constraint firstItem="U7M-Y6-CIp" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="PR3-ph-QjG"/>
+                    <constraint firstItem="HQI-ee-2qB" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="Pxf-nJ-wnF"/>
+                    <constraint firstItem="C89-9T-1g8" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="QSM-h0-b7K"/>
+                    <constraint firstAttribute="bottom" secondItem="yXX-BU-VN2" secondAttribute="bottom" constant="20" symbolic="YES" id="Qjz-eK-C8S"/>
+                    <constraint firstItem="tf8-wW-AU9" firstAttribute="leading" secondItem="QnG-cu-IJh" secondAttribute="trailing" constant="8" symbolic="YES" id="QyB-eq-7kf"/>
+                    <constraint firstItem="0XS-ai-9is" firstAttribute="leading" secondItem="XII-4H-G0g" secondAttribute="trailing" constant="80" id="R7d-y4-fMe"/>
+                    <constraint firstItem="0XS-ai-9is" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="Rlj-yI-eGP"/>
+                    <constraint firstItem="yaQ-Gf-ZuY" firstAttribute="trailing" secondItem="VNc-hL-QdN" secondAttribute="trailing" id="T4s-nA-psM"/>
+                    <constraint firstItem="Y2M-dK-cCN" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="TUI-Ad-FB5"/>
+                    <constraint firstItem="QMq-2C-Fat" firstAttribute="leading" secondItem="W0O-14-b3C" secondAttribute="trailing" constant="1" id="UFk-gT-QcK"/>
+                    <constraint firstItem="Vgr-01-lsi" firstAttribute="leading" secondItem="tf8-wW-AU9" secondAttribute="trailing" constant="8" symbolic="YES" id="UIA-yI-3xa"/>
+                    <constraint firstItem="790-wH-VQx" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="Ulc-Kx-hvO"/>
+                    <constraint firstItem="VNc-hL-QdN" firstAttribute="leading" secondItem="1Ik-VF-fgv" secondAttribute="trailing" constant="8" symbolic="YES" id="Wzk-kQ-5H2"/>
+                    <constraint firstItem="XII-4H-G0g" firstAttribute="trailing" secondItem="W0O-14-b3C" secondAttribute="trailing" id="Wzp-IZ-9wh"/>
+                    <constraint firstItem="Vgr-01-lsi" firstAttribute="centerY" secondItem="0wS-UT-WfK" secondAttribute="centerY" id="X7J-0J-aK9"/>
+                    <constraint firstItem="W0O-14-b3C" firstAttribute="centerX" secondItem="gIp-Ho-8D9" secondAttribute="centerX" id="ZN9-Jr-8Ud"/>
+                    <constraint firstItem="tf8-wW-AU9" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="ae6-Ei-uiv"/>
+                    <constraint firstItem="yaQ-Gf-ZuY" firstAttribute="leading" secondItem="VNc-hL-QdN" secondAttribute="leading" id="dPR-aB-Zm0"/>
+                    <constraint firstItem="JaQ-K8-5CJ" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="eKr-7a-Dxj"/>
+                    <constraint firstItem="Ism-ea-1AR" firstAttribute="leading" secondItem="qIy-rq-rfN" secondAttribute="trailing" constant="41" id="fTe-RK-70S"/>
+                    <constraint firstItem="7d8-Ke-7dM" firstAttribute="trailing" secondItem="QqZ-Cc-Q7O" secondAttribute="trailing" id="hhc-A8-jcf"/>
+                    <constraint firstItem="W0O-14-b3C" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="iOn-mf-rTp"/>
+                    <constraint firstItem="QqZ-Cc-Q7O" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="jHB-9N-Xne"/>
+                    <constraint firstItem="790-wH-VQx" firstAttribute="leading" secondItem="QqZ-Cc-Q7O" secondAttribute="trailing" constant="8" symbolic="YES" id="kJD-Fx-efM"/>
+                    <constraint firstItem="VNc-hL-QdN" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="l85-d7-kD0"/>
+                    <constraint firstItem="qIy-rq-rfN" firstAttribute="firstBaseline" secondItem="7XJ-cc-btG" secondAttribute="firstBaseline" id="n5l-bs-6jC"/>
+                    <constraint firstItem="XII-4H-G0g" firstAttribute="firstBaseline" secondItem="0wS-UT-WfK" secondAttribute="firstBaseline" id="o0n-nc-ka8"/>
+                    <constraint firstItem="JaQ-K8-5CJ" firstAttribute="trailing" secondItem="1Ik-VF-fgv" secondAttribute="trailing" id="o1M-HP-tEE"/>
+                    <constraint firstItem="1Ik-VF-fgv" firstAttribute="leading" secondItem="790-wH-VQx" secondAttribute="trailing" constant="8" symbolic="YES" id="pKm-4W-gB6"/>
+                    <constraint firstItem="QnG-cu-IJh" firstAttribute="leading" secondItem="VEX-Sg-uXJ" secondAttribute="trailing" constant="8" symbolic="YES" id="smR-mo-swU"/>
+                    <constraint firstItem="0wS-UT-WfK" firstAttribute="trailing" secondItem="7XJ-cc-btG" secondAttribute="trailing" id="t2E-tA-abw"/>
+                    <constraint firstItem="C89-9T-1g8" firstAttribute="leading" secondItem="0na-K4-0RL" secondAttribute="trailing" constant="51" id="wiD-SX-HAn"/>
+                    <constraint firstItem="yXX-BU-VN2" firstAttribute="leading" secondItem="gIp-Ho-8D9" secondAttribute="leading" constant="20" symbolic="YES" id="yXF-QC-elC"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
+            </connections>
+            <point key="canvasLocation" x="788.5" y="309"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="g8a-1p-gVR"/>
+        <customObject id="KaL-lT-nmh" customClass="DIYBMediaPlayer"/>
+        <arrayController objectClassName="NSString" id="DuE-wL-Iyu">
+            <classReference key="objectClass" className="NSString"/>
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="gridNames" id="NaL-Zc-VEE"/>
+            </connections>
+        </arrayController>
+    </objects>
+</document>

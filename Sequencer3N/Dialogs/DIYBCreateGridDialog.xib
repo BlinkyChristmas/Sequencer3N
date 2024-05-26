@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DIYBCreateGridDialog">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="544" height="181"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="5120" height="1415"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="544" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eAn-4L-48K">
+                        <rect key="frame" x="456" y="16" width="75" height="32"/>
+                        <buttonCell key="cell" type="push" title="Create" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aWE-2F-Ep2">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="createButton:" target="-2" id="FrP-2I-Qcb"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zN4-ED-dy9">
+                        <rect key="frame" x="13" y="16" width="76" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DII-NF-LS0">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelButton:" target="-2" id="ILo-Zx-Z2h"/>
+                        </connections>
+                    </button>
+                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4oN-oA-INV">
+                        <rect key="frame" x="20" y="107" width="504" height="21"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" drawsBackground="YES" id="lMO-un-arV">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="grid" id="jbJ-y8-VmK"/>
+                        </connections>
+                    </textField>
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LAT-lX-3YU">
+                        <rect key="frame" x="238" y="145" width="69" height="16"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Grid Name" id="K18-xh-iIu">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="69D-Qd-Wnv">
+                        <rect key="frame" x="247" y="72" width="50" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Knj-QZ-Tzv"/>
+                        </constraints>
+                        <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="color" id="Dbq-jc-Dwo"/>
+                        </connections>
+                    </colorWell>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zN4-ED-dy9" firstAttribute="top" secondItem="4oN-oA-INV" secondAttribute="bottom" constant="64" id="734-Fe-2eg"/>
+                    <constraint firstAttribute="trailing" secondItem="4oN-oA-INV" secondAttribute="trailing" constant="20" symbolic="YES" id="DVr-JK-IYC"/>
+                    <constraint firstItem="4oN-oA-INV" firstAttribute="centerX" secondItem="LAT-lX-3YU" secondAttribute="centerX" id="Dph-74-vUR"/>
+                    <constraint firstItem="69D-Qd-Wnv" firstAttribute="top" secondItem="4oN-oA-INV" secondAttribute="bottom" constant="8" symbolic="YES" id="IZV-nn-fQn"/>
+                    <constraint firstItem="eAn-4L-48K" firstAttribute="trailing" secondItem="4oN-oA-INV" secondAttribute="trailing" id="UEM-wk-2x3"/>
+                    <constraint firstItem="4oN-oA-INV" firstAttribute="leading" secondItem="zN4-ED-dy9" secondAttribute="leading" id="XDK-Je-jXq"/>
+                    <constraint firstItem="4oN-oA-INV" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="ZPh-d2-lBR"/>
+                    <constraint firstItem="eAn-4L-48K" firstAttribute="baseline" secondItem="zN4-ED-dy9" secondAttribute="baseline" id="e0U-Ww-4L7"/>
+                    <constraint firstItem="69D-Qd-Wnv" firstAttribute="centerX" secondItem="4oN-oA-INV" secondAttribute="centerX" id="tCw-7c-oqO"/>
+                    <constraint firstItem="4oN-oA-INV" firstAttribute="top" secondItem="LAT-lX-3YU" secondAttribute="bottom" constant="17" id="vZS-1h-SlN"/>
+                    <constraint firstAttribute="bottom" secondItem="69D-Qd-Wnv" secondAttribute="bottom" constant="74" id="vcP-nX-c0w"/>
+                    <constraint firstItem="LAT-lX-3YU" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="wMQ-EY-WNI"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="-138"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="Cm0-0Y-jKi"/>
+    </objects>
+</document>

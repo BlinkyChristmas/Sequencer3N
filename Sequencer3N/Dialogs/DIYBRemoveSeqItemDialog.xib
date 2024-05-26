@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DIYBRemoveSeqItemDialog">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="589" height="115"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="589" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wxG-jd-Jqh">
+                        <rect key="frame" x="493" y="13" width="81" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Delete" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fYa-EH-Puu">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="createButton:" target="-2" id="Hqq-pd-SDM"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3j8-8d-4pF">
+                        <rect key="frame" x="14" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dxg-Es-Iqv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelButton:" target="-2" id="eo8-LC-8x6"/>
+                        </connections>
+                    </button>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yjG-c5-78P">
+                        <rect key="frame" x="173" y="46" width="244" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="239" id="n8E-S5-Xe3"/>
+                        </constraints>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Ti3-CS-z2E" id="ehP-8q-JIX">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <menu key="menu" title="OtherViews" id="nOC-w9-AJ8">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="Ti3-CS-z2E"/>
+                                    <menuItem title="Item 2" id="axW-F5-v69"/>
+                                    <menuItem title="Item 3" id="0kw-9B-Lni"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="BjP-Hm-FUc" name="contentValues" keyPath="arrangedObjects.name" id="FBY-qY-WKt"/>
+                            <binding destination="-2" name="selectedValue" keyPath="selectedSeq" previousBinding="FBY-qY-WKt" id="O2L-eP-OYy"/>
+                        </connections>
+                    </popUpButton>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aBX-wL-3eh">
+                        <rect key="frame" x="246" y="78" width="96" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sequence Item" id="QM6-aN-L8y">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aBX-wL-3eh" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="DVa-oG-5dq"/>
+                    <constraint firstItem="wxG-jd-Jqh" firstAttribute="baseline" secondItem="3j8-8d-4pF" secondAttribute="baseline" id="HYb-Jd-Nog"/>
+                    <constraint firstItem="aBX-wL-3eh" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="VyU-WA-gcL"/>
+                    <constraint firstItem="yjG-c5-78P" firstAttribute="centerX" secondItem="aBX-wL-3eh" secondAttribute="centerX" id="XfE-3e-LBt"/>
+                    <constraint firstItem="yjG-c5-78P" firstAttribute="top" secondItem="aBX-wL-3eh" secondAttribute="bottom" constant="8" symbolic="YES" id="f0u-bN-MBu"/>
+                    <constraint firstAttribute="bottom" secondItem="3j8-8d-4pF" secondAttribute="bottom" constant="20" symbolic="YES" id="kAb-xp-A7R"/>
+                    <constraint firstItem="3j8-8d-4pF" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="lxp-7f-5GJ"/>
+                    <constraint firstAttribute="trailing" secondItem="wxG-jd-Jqh" secondAttribute="trailing" constant="21" id="ugk-Z7-xOt"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+        <arrayController objectClassName="DIYBSequenceItem" editable="NO" id="BjP-Hm-FUc">
+            <declaredKeys>
+                <string>name</string>
+            </declaredKeys>
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="items" id="OdP-hQ-8hY"/>
+            </connections>
+        </arrayController>
+        <userDefaultsController representsSharedInstance="YES" id="qcy-xi-AxW"/>
+    </objects>
+</document>

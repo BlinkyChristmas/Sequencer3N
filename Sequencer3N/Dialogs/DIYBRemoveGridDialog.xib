@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DIYBRemoveGridDialog">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="578" height="97"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="578" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FHJ-Cf-UZY">
+                        <rect key="frame" x="482" y="13" width="81" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Delete" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dsz-gM-Ldg">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="createButton:" target="-2" id="wmg-Gs-s9p"/>
+                            <binding destination="-2" name="enabled" keyPath="selectedGrid" id="6N3-X1-ko0">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSIsNotNil</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W1D-yF-gfZ">
+                        <rect key="frame" x="14" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m0k-Ow-EiG">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelButton:" target="-2" id="Qt8-Ob-alH"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cof-3A-Zui">
+                        <rect key="frame" x="274" y="60" width="31" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Grid" id="qRe-6U-bvq">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-cu-5h1">
+                        <rect key="frame" x="149" y="35" width="282" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="277" id="cX6-ES-KD5"/>
+                        </constraints>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="uwu-j6-1So" id="I2T-1N-o9H">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="jkp-52-N0s">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="uwu-j6-1So"/>
+                                    <menuItem title="Item 2" id="OBR-Ah-L24"/>
+                                    <menuItem title="Item 3" id="voL-A7-zcc"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="Kwu-ED-Ajb" name="contentValues" keyPath="arrangedObjects" id="cXy-wL-7Ar"/>
+                            <binding destination="-2" name="selectedValue" keyPath="selectedGrid" previousBinding="cXy-wL-7Ar" id="mw1-jS-IEA"/>
+                        </connections>
+                    </popUpButton>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="W1D-yF-gfZ" secondAttribute="bottom" constant="20" symbolic="YES" id="6fq-wo-UYo"/>
+                    <constraint firstItem="GhM-cu-5h1" firstAttribute="centerX" secondItem="cof-3A-Zui" secondAttribute="centerX" id="HPD-JL-jXs"/>
+                    <constraint firstItem="GhM-cu-5h1" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="Icg-Ci-U8v"/>
+                    <constraint firstItem="W1D-yF-gfZ" firstAttribute="baseline" secondItem="FHJ-Cf-UZY" secondAttribute="baseline" id="Ysw-M0-Tjv"/>
+                    <constraint firstAttribute="trailing" secondItem="FHJ-Cf-UZY" secondAttribute="trailing" constant="21" id="ePj-FI-vbr"/>
+                    <constraint firstItem="cof-3A-Zui" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="fAX-Cz-Cbh"/>
+                    <constraint firstItem="cof-3A-Zui" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="v3A-xS-j4j"/>
+                    <constraint firstItem="W1D-yF-gfZ" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="wOd-fY-6Fo"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+        <arrayController objectClassName="NSString" editable="NO" id="Kwu-ED-Ajb">
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="gridNames" id="dtf-Sv-6dt"/>
+            </connections>
+        </arrayController>
+        <userDefaultsController representsSharedInstance="YES" id="XLT-v7-abJ"/>
+    </objects>
+</document>

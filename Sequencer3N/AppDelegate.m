@@ -1,7 +1,6 @@
 // 
 
 #import "AppDelegate.h"
-
 @interface AppDelegate ()
 
 @end
@@ -22,5 +21,8 @@
     return YES;
 }
 
+- (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender {
+    return NO ;
+}
 
 @end

@@ -8,25 +8,202 @@
 
 /* Begin PBXBuildFile section */
 		56D951FC2C02AA7600FD77A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D951FB2C02AA7600FD77A1 /* AppDelegate.m */; };
-		56D951FF2C02AA7600FD77A1 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D951FE2C02AA7600FD77A1 /* Document.m */; };
-		56D952022C02AA7600FD77A1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 56D952012C02AA7600FD77A1 /* Base */; };
 		56D952042C02AA7700FD77A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D952032C02AA7700FD77A1 /* Assets.xcassets */; };
 		56D952072C02AA7700FD77A1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 56D952062C02AA7700FD77A1 /* Base */; };
 		56D9520A2C02AA7700FD77A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952092C02AA7700FD77A1 /* main.m */; };
+		56D952132C02AB0700FD77A1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D952122C02AB0700FD77A1 /* QuartzCore.framework */; };
+		56D952152C02AB1000FD77A1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D952142C02AB1000FD77A1 /* AVFoundation.framework */; };
+		56D952172C02AB1C00FD77A1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D952162C02AB1C00FD77A1 /* AppKit.framework */; };
+		56D952192C02AB2800FD77A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D952182C02AB2800FD77A1 /* CoreData.framework */; };
+		56D9521B2C02AB3300FD77A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D9521A2C02AB3300FD77A1 /* Foundation.framework */; };
+		56D9521D2C02AB3E00FD77A1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D9521C2C02AB3E00FD77A1 /* Cocoa.framework */; };
+		56D952452C02AE1000FD77A1 /* DIYBCreateGridDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9522C2C02AE0F00FD77A1 /* DIYBCreateGridDialog.m */; };
+		56D952462C02AE1000FD77A1 /* DIYBEffectDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D9522D2C02AE0F00FD77A1 /* DIYBEffectDialog.xib */; };
+		56D952472C02AE1000FD77A1 /* DIYBFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9522E2C02AE0F00FD77A1 /* DIYBFilterController.m */; };
+		56D952482C02AE1000FD77A1 /* DIYBGridBatch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952312C02AE0F00FD77A1 /* DIYBGridBatch.xib */; };
+		56D952492C02AE1000FD77A1 /* DIYBCreateGridDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952322C02AE0F00FD77A1 /* DIYBCreateGridDialog.xib */; };
+		56D9524A2C02AE1000FD77A1 /* DIYBTimeEntryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952332C02AE0F00FD77A1 /* DIYBTimeEntryController.xib */; };
+		56D9524B2C02AE1000FD77A1 /* DIYBGridBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952342C02AE0F00FD77A1 /* DIYBGridBatch.m */; };
+		56D9524C2C02AE1000FD77A1 /* DIYBEffectDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952362C02AE0F00FD77A1 /* DIYBEffectDialog.m */; };
+		56D9524D2C02AE1000FD77A1 /* DIYBRemoveGridDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952372C02AE0F00FD77A1 /* DIYBRemoveGridDialog.m */; };
+		56D9524E2C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9523A2C02AE0F00FD77A1 /* DIYBRemoveSeqItemDialog.m */; };
+		56D9524F2C02AE1000FD77A1 /* DIYBRemoveGridDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D9523B2C02AE0F00FD77A1 /* DIYBRemoveGridDialog.xib */; };
+		56D952502C02AE1000FD77A1 /* DIYBFilterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9523C2C02AE0F00FD77A1 /* DIYBFilterItem.m */; };
+		56D952512C02AE1000FD77A1 /* DIYBCreateSequenceItemDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D9523D2C02AE0F00FD77A1 /* DIYBCreateSequenceItemDialog.xib */; };
+		56D952522C02AE1000FD77A1 /* DIYBCreateSequenceItemDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9523E2C02AE0F00FD77A1 /* DIYBCreateSequenceItemDialog.m */; };
+		56D952532C02AE1000FD77A1 /* DIYBFilterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D9523F2C02AE0F00FD77A1 /* DIYBFilterController.xib */; };
+		56D952542C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952402C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.xib */; };
+		56D952552C02AE1000FD77A1 /* DIYBTimeEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952422C02AE1000FD77A1 /* DIYBTimeEntryController.m */; };
+		56D9525A2C02AE2200FD77A1 /* PixelEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952572C02AE2200FD77A1 /* PixelEffect.m */; };
+		56D9525B2C02AE2200FD77A1 /* DIYBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952582C02AE2200FD77A1 /* DIYBColor.m */; };
+		56D952612C02AE2F00FD77A1 /* DIYBExportItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9525E2C02AE2F00FD77A1 /* DIYBExportItem.m */; };
+		56D952622C02AE2F00FD77A1 /* DIYBExportGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9525F2C02AE2F00FD77A1 /* DIYBExportGroup.m */; };
+		56D952692C02AE3D00FD77A1 /* DIYBScratchEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952642C02AE3D00FD77A1 /* DIYBScratchEntry.m */; };
+		56D9526A2C02AE3D00FD77A1 /* DIYBTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952662C02AE3D00FD77A1 /* DIYBTimeEntry.m */; };
+		56D9526B2C02AE3D00FD77A1 /* DIYBGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952682C02AE3D00FD77A1 /* DIYBGrid.m */; };
+		56D952722C02AE6100FD77A1 /* NSColor+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9526C2C02AE6000FD77A1 /* NSColor+Serialization.m */; };
+		56D952732C02AE6100FD77A1 /* NSXMLDocument+Beautify.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9526F2C02AE6100FD77A1 /* NSXMLDocument+Beautify.m */; };
+		56D952742C02AE6100FD77A1 /* DIYBURLToString.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952702C02AE6100FD77A1 /* DIYBURLToString.m */; };
+		56D952852C02AE7100FD77A1 /* DIYBEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952762C02AE7100FD77A1 /* DIYBEffectView.m */; };
+		56D952862C02AE7100FD77A1 /* DIYBContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952772C02AE7100FD77A1 /* DIYBContainerView.m */; };
+		56D952872C02AE7100FD77A1 /* DIYBItemEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9527B2C02AE7100FD77A1 /* DIYBItemEffectView.m */; };
+		56D952882C02AE7100FD77A1 /* DIYBItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9527D2C02AE7100FD77A1 /* DIYBItemView.m */; };
+		56D952892C02AE7100FD77A1 /* DIYBTimeNowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9527F2C02AE7100FD77A1 /* DIYBTimeNowView.m */; };
+		56D9528A2C02AE7100FD77A1 /* DIYBBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952802C02AE7100FD77A1 /* DIYBBaseView.m */; };
+		56D9528B2C02AE7100FD77A1 /* DIYBGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952822C02AE7100FD77A1 /* DIYBGridView.m */; };
+		56D9528C2C02AE7100FD77A1 /* DIYBScratchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952842C02AE7100FD77A1 /* DIYBScratchView.m */; };
+		56D952962C02AE7E00FD77A1 /* DIYBVisualController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D9528D2C02AE7E00FD77A1 /* DIYBVisualController.xib */; };
+		56D952972C02AE7E00FD77A1 /* DIYBVisualGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9528E2C02AE7E00FD77A1 /* DIYBVisualGroup.m */; };
+		56D952982C02AE7E00FD77A1 /* DIYBVisualPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9528F2C02AE7E00FD77A1 /* DIYBVisualPath.m */; };
+		56D952992C02AE7E00FD77A1 /* DIYBVisualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952912C02AE7E00FD77A1 /* DIYBVisualView.m */; };
+		56D9529A2C02AE7E00FD77A1 /* DIYBVisualController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952942C02AE7E00FD77A1 /* DIYBVisualController.m */; };
+		56D952A12C02AEB700FD77A1 /* DIYBDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9529C2C02AEB600FD77A1 /* DIYBDocument.m */; };
+		56D952A22C02AEB700FD77A1 /* DIYBExportLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D9529E2C02AEB600FD77A1 /* DIYBExportLight.m */; };
+		56D952A32C02AEB700FD77A1 /* DIYBWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952A02C02AEB700FD77A1 /* DIYBWindowController.m */; };
+		56D952A52C02AF0000FD77A1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 56D952A42C02AF0000FD77A1 /* Credits.rtf */; };
+		56D952A72C02AF2700FD77A1 /* DIYBDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952A62C02AF2600FD77A1 /* DIYBDocument.xib */; };
+		56D952AE2C02AFAA00FD77A1 /* DIYBLightGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952A82C02AFAA00FD77A1 /* DIYBLightGroup.m */; };
+		56D952AF2C02AFAA00FD77A1 /* DIYBLightStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952A92C02AFAA00FD77A1 /* DIYBLightStorage.m */; };
+		56D952B02C02AFAA00FD77A1 /* DIYBLightSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952AC2C02AFAA00FD77A1 /* DIYBLightSource.m */; };
+		56D952B62C02AFEF00FD77A1 /* DIYBPrefController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952B22C02AFEF00FD77A1 /* DIYBPrefController.xib */; };
+		56D952B72C02AFEF00FD77A1 /* DIYBPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952B42C02AFEF00FD77A1 /* DIYBPrefController.m */; };
+		56D952B82C02AFEF00FD77A1 /* DIYBPrefData.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952B52C02AFEF00FD77A1 /* DIYBPrefData.m */; };
+		56D952BB2C02B00200FD77A1 /* SynchroScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952BA2C02B00200FD77A1 /* SynchroScrollView.m */; };
+		56D952C92C02B01900FD77A1 /* DIYBImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952BC2C02B01800FD77A1 /* DIYBImageCache.m */; };
+		56D952CA2C02B01900FD77A1 /* DIYBURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952BD2C02B01800FD77A1 /* DIYBURLCache.m */; };
+		56D952CB2C02B01900FD77A1 /* DIYBItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952C02C02B01800FD77A1 /* DIYBItemController.xib */; };
+		56D952CC2C02B01900FD77A1 /* DIYBTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952C22C02B01800FD77A1 /* DIYBTransition.m */; };
+		56D952CD2C02B01900FD77A1 /* DIYBItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952C32C02B01800FD77A1 /* DIYBItemController.m */; };
+		56D952CE2C02B01900FD77A1 /* DIYBSequenceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952C52C02B01800FD77A1 /* DIYBSequenceItem.m */; };
+		56D952CF2C02B01900FD77A1 /* DIYBEffectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952C72C02B01900FD77A1 /* DIYBEffectItem.m */; };
+		56D952D22C02B03700FD77A1 /* DIYBMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952D02C02B03700FD77A1 /* DIYBMediaPlayer.m */; };
+		56D952D42C02B99E00FD77A1 /* prettyxml.xml in Resources */ = {isa = PBXBuildFile; fileRef = 56D952D32C02B99E00FD77A1 /* prettyxml.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56D951F72C02AA7600FD77A1 /* Sequencer3N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sequencer3N.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D951FA2C02AA7600FD77A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56D951FB2C02AA7600FD77A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56D951FD2C02AA7600FD77A1 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
-		56D951FE2C02AA7600FD77A1 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
-		56D952012C02AA7600FD77A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
 		56D952032C02AA7700FD77A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56D952062C02AA7700FD77A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		56D952082C02AA7700FD77A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D952092C02AA7700FD77A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D9520B2C02AA7700FD77A1 /* Sequencer3N.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sequencer3N.entitlements; sourceTree = "<group>"; };
+		56D952122C02AB0700FD77A1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		56D952142C02AB1000FD77A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		56D952162C02AB1C00FD77A1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		56D952182C02AB2800FD77A1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		56D9521A2C02AB3300FD77A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		56D9521C2C02AB3E00FD77A1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		56D9522B2C02AE0F00FD77A1 /* DIYBCreateGridDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBCreateGridDialog.h; sourceTree = "<group>"; };
+		56D9522C2C02AE0F00FD77A1 /* DIYBCreateGridDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBCreateGridDialog.m; sourceTree = "<group>"; };
+		56D9522D2C02AE0F00FD77A1 /* DIYBEffectDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBEffectDialog.xib; sourceTree = "<group>"; };
+		56D9522E2C02AE0F00FD77A1 /* DIYBFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBFilterController.m; sourceTree = "<group>"; };
+		56D9522F2C02AE0F00FD77A1 /* DIYBEffectDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBEffectDialog.h; sourceTree = "<group>"; };
+		56D952302C02AE0F00FD77A1 /* DIYBRemoveSeqItemDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBRemoveSeqItemDialog.h; sourceTree = "<group>"; };
+		56D952312C02AE0F00FD77A1 /* DIYBGridBatch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBGridBatch.xib; sourceTree = "<group>"; };
+		56D952322C02AE0F00FD77A1 /* DIYBCreateGridDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBCreateGridDialog.xib; sourceTree = "<group>"; };
+		56D952332C02AE0F00FD77A1 /* DIYBTimeEntryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBTimeEntryController.xib; sourceTree = "<group>"; };
+		56D952342C02AE0F00FD77A1 /* DIYBGridBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBGridBatch.m; sourceTree = "<group>"; };
+		56D952352C02AE0F00FD77A1 /* DIYBFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBFilterController.h; sourceTree = "<group>"; };
+		56D952362C02AE0F00FD77A1 /* DIYBEffectDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBEffectDialog.m; sourceTree = "<group>"; };
+		56D952372C02AE0F00FD77A1 /* DIYBRemoveGridDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBRemoveGridDialog.m; sourceTree = "<group>"; };
+		56D952382C02AE0F00FD77A1 /* DIYBTimeEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBTimeEntryController.h; sourceTree = "<group>"; };
+		56D952392C02AE0F00FD77A1 /* DIYBRemoveGridDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBRemoveGridDialog.h; sourceTree = "<group>"; };
+		56D9523A2C02AE0F00FD77A1 /* DIYBRemoveSeqItemDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBRemoveSeqItemDialog.m; sourceTree = "<group>"; };
+		56D9523B2C02AE0F00FD77A1 /* DIYBRemoveGridDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBRemoveGridDialog.xib; sourceTree = "<group>"; };
+		56D9523C2C02AE0F00FD77A1 /* DIYBFilterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBFilterItem.m; sourceTree = "<group>"; };
+		56D9523D2C02AE0F00FD77A1 /* DIYBCreateSequenceItemDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBCreateSequenceItemDialog.xib; sourceTree = "<group>"; };
+		56D9523E2C02AE0F00FD77A1 /* DIYBCreateSequenceItemDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBCreateSequenceItemDialog.m; sourceTree = "<group>"; };
+		56D9523F2C02AE0F00FD77A1 /* DIYBFilterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBFilterController.xib; sourceTree = "<group>"; };
+		56D952402C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBRemoveSeqItemDialog.xib; sourceTree = "<group>"; };
+		56D952412C02AE1000FD77A1 /* DIYBFilterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBFilterItem.h; sourceTree = "<group>"; };
+		56D952422C02AE1000FD77A1 /* DIYBTimeEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBTimeEntryController.m; sourceTree = "<group>"; };
+		56D952432C02AE1000FD77A1 /* DIYBCreateSequenceItemDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBCreateSequenceItemDialog.h; sourceTree = "<group>"; };
+		56D952442C02AE1000FD77A1 /* DIYBGridBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBGridBatch.h; sourceTree = "<group>"; };
+		56D952562C02AE2200FD77A1 /* PixelEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelEffect.h; sourceTree = "<group>"; };
+		56D952572C02AE2200FD77A1 /* PixelEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PixelEffect.m; sourceTree = "<group>"; };
+		56D952582C02AE2200FD77A1 /* DIYBColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBColor.m; sourceTree = "<group>"; };
+		56D952592C02AE2200FD77A1 /* DIYBColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBColor.h; sourceTree = "<group>"; };
+		56D9525C2C02AE2E00FD77A1 /* DIYBExportItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBExportItem.h; sourceTree = "<group>"; };
+		56D9525D2C02AE2E00FD77A1 /* MediaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfo.h; sourceTree = "<group>"; };
+		56D9525E2C02AE2F00FD77A1 /* DIYBExportItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBExportItem.m; sourceTree = "<group>"; };
+		56D9525F2C02AE2F00FD77A1 /* DIYBExportGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBExportGroup.m; sourceTree = "<group>"; };
+		56D952602C02AE2F00FD77A1 /* DIYBExportGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBExportGroup.h; sourceTree = "<group>"; };
+		56D952632C02AE3D00FD77A1 /* DIYBScratchEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBScratchEntry.h; sourceTree = "<group>"; };
+		56D952642C02AE3D00FD77A1 /* DIYBScratchEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBScratchEntry.m; sourceTree = "<group>"; };
+		56D952652C02AE3D00FD77A1 /* DIYBTimeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBTimeEntry.h; sourceTree = "<group>"; };
+		56D952662C02AE3D00FD77A1 /* DIYBTimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBTimeEntry.m; sourceTree = "<group>"; };
+		56D952672C02AE3D00FD77A1 /* DIYBGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBGrid.h; sourceTree = "<group>"; };
+		56D952682C02AE3D00FD77A1 /* DIYBGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBGrid.m; sourceTree = "<group>"; };
+		56D9526C2C02AE6000FD77A1 /* NSColor+Serialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Serialization.m"; sourceTree = "<group>"; };
+		56D9526D2C02AE6100FD77A1 /* NSColor+Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+Serialization.h"; sourceTree = "<group>"; };
+		56D9526E2C02AE6100FD77A1 /* NSXMLDocument+Beautify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLDocument+Beautify.h"; sourceTree = "<group>"; };
+		56D9526F2C02AE6100FD77A1 /* NSXMLDocument+Beautify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLDocument+Beautify.m"; sourceTree = "<group>"; };
+		56D952702C02AE6100FD77A1 /* DIYBURLToString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBURLToString.m; sourceTree = "<group>"; };
+		56D952712C02AE6100FD77A1 /* DIYBURLToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBURLToString.h; sourceTree = "<group>"; };
+		56D952752C02AE7100FD77A1 /* DIYBGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBGridView.h; sourceTree = "<group>"; };
+		56D952762C02AE7100FD77A1 /* DIYBEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBEffectView.m; sourceTree = "<group>"; };
+		56D952772C02AE7100FD77A1 /* DIYBContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBContainerView.m; sourceTree = "<group>"; };
+		56D952782C02AE7100FD77A1 /* DIYBScratchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBScratchView.h; sourceTree = "<group>"; };
+		56D952792C02AE7100FD77A1 /* DIYBTimeNowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBTimeNowView.h; sourceTree = "<group>"; };
+		56D9527A2C02AE7100FD77A1 /* DIYBEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBEffectView.h; sourceTree = "<group>"; };
+		56D9527B2C02AE7100FD77A1 /* DIYBItemEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBItemEffectView.m; sourceTree = "<group>"; };
+		56D9527C2C02AE7100FD77A1 /* DIYBItemEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBItemEffectView.h; sourceTree = "<group>"; };
+		56D9527D2C02AE7100FD77A1 /* DIYBItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBItemView.m; sourceTree = "<group>"; };
+		56D9527E2C02AE7100FD77A1 /* DIYBItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBItemView.h; sourceTree = "<group>"; };
+		56D9527F2C02AE7100FD77A1 /* DIYBTimeNowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBTimeNowView.m; sourceTree = "<group>"; };
+		56D952802C02AE7100FD77A1 /* DIYBBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBBaseView.m; sourceTree = "<group>"; };
+		56D952812C02AE7100FD77A1 /* DIYBContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBContainerView.h; sourceTree = "<group>"; };
+		56D952822C02AE7100FD77A1 /* DIYBGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBGridView.m; sourceTree = "<group>"; };
+		56D952832C02AE7100FD77A1 /* DIYBBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBBaseView.h; sourceTree = "<group>"; };
+		56D952842C02AE7100FD77A1 /* DIYBScratchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBScratchView.m; sourceTree = "<group>"; };
+		56D9528D2C02AE7E00FD77A1 /* DIYBVisualController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBVisualController.xib; sourceTree = "<group>"; };
+		56D9528E2C02AE7E00FD77A1 /* DIYBVisualGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBVisualGroup.m; sourceTree = "<group>"; };
+		56D9528F2C02AE7E00FD77A1 /* DIYBVisualPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBVisualPath.m; sourceTree = "<group>"; };
+		56D952902C02AE7E00FD77A1 /* DIYBVisualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBVisualView.h; sourceTree = "<group>"; };
+		56D952912C02AE7E00FD77A1 /* DIYBVisualView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBVisualView.m; sourceTree = "<group>"; };
+		56D952922C02AE7E00FD77A1 /* DIYBVisualGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBVisualGroup.h; sourceTree = "<group>"; };
+		56D952932C02AE7E00FD77A1 /* DIYBVisualPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBVisualPath.h; sourceTree = "<group>"; };
+		56D952942C02AE7E00FD77A1 /* DIYBVisualController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBVisualController.m; sourceTree = "<group>"; };
+		56D952952C02AE7E00FD77A1 /* DIYBVisualController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBVisualController.h; sourceTree = "<group>"; };
+		56D9529B2C02AEB600FD77A1 /* DIYBExportLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBExportLight.h; sourceTree = "<group>"; };
+		56D9529C2C02AEB600FD77A1 /* DIYBDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBDocument.m; sourceTree = "<group>"; };
+		56D9529D2C02AEB600FD77A1 /* DIYBDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBDocument.h; sourceTree = "<group>"; };
+		56D9529E2C02AEB600FD77A1 /* DIYBExportLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBExportLight.m; sourceTree = "<group>"; };
+		56D9529F2C02AEB700FD77A1 /* DIYBWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBWindowController.h; sourceTree = "<group>"; };
+		56D952A02C02AEB700FD77A1 /* DIYBWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBWindowController.m; sourceTree = "<group>"; };
+		56D952A42C02AF0000FD77A1 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		56D952A62C02AF2600FD77A1 /* DIYBDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBDocument.xib; sourceTree = "<group>"; };
+		56D952A82C02AFAA00FD77A1 /* DIYBLightGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBLightGroup.m; sourceTree = "<group>"; };
+		56D952A92C02AFAA00FD77A1 /* DIYBLightStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBLightStorage.m; sourceTree = "<group>"; };
+		56D952AA2C02AFAA00FD77A1 /* DIYBLightGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBLightGroup.h; sourceTree = "<group>"; };
+		56D952AB2C02AFAA00FD77A1 /* DIYBLightSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBLightSource.h; sourceTree = "<group>"; };
+		56D952AC2C02AFAA00FD77A1 /* DIYBLightSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBLightSource.m; sourceTree = "<group>"; };
+		56D952AD2C02AFAA00FD77A1 /* DIYBLightStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBLightStorage.h; sourceTree = "<group>"; };
+		56D952B12C02AFEF00FD77A1 /* DIYBPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBPrefController.h; sourceTree = "<group>"; };
+		56D952B22C02AFEF00FD77A1 /* DIYBPrefController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBPrefController.xib; sourceTree = "<group>"; };
+		56D952B32C02AFEF00FD77A1 /* DIYBPrefData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBPrefData.h; sourceTree = "<group>"; };
+		56D952B42C02AFEF00FD77A1 /* DIYBPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBPrefController.m; sourceTree = "<group>"; };
+		56D952B52C02AFEF00FD77A1 /* DIYBPrefData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBPrefData.m; sourceTree = "<group>"; };
+		56D952B92C02B00200FD77A1 /* SynchroScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchroScrollView.h; sourceTree = "<group>"; };
+		56D952BA2C02B00200FD77A1 /* SynchroScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchroScrollView.m; sourceTree = "<group>"; };
+		56D952BC2C02B01800FD77A1 /* DIYBImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBImageCache.m; sourceTree = "<group>"; };
+		56D952BD2C02B01800FD77A1 /* DIYBURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBURLCache.m; sourceTree = "<group>"; };
+		56D952BE2C02B01800FD77A1 /* DIYBURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBURLCache.h; sourceTree = "<group>"; };
+		56D952BF2C02B01800FD77A1 /* DIYBItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBItemController.h; sourceTree = "<group>"; };
+		56D952C02C02B01800FD77A1 /* DIYBItemController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DIYBItemController.xib; sourceTree = "<group>"; };
+		56D952C12C02B01800FD77A1 /* DIYBEffectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBEffectItem.h; sourceTree = "<group>"; };
+		56D952C22C02B01800FD77A1 /* DIYBTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBTransition.m; sourceTree = "<group>"; };
+		56D952C32C02B01800FD77A1 /* DIYBItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBItemController.m; sourceTree = "<group>"; };
+		56D952C42C02B01800FD77A1 /* DIYBTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBTransition.h; sourceTree = "<group>"; };
+		56D952C52C02B01800FD77A1 /* DIYBSequenceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBSequenceItem.m; sourceTree = "<group>"; };
+		56D952C62C02B01800FD77A1 /* DIYBImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBImageCache.h; sourceTree = "<group>"; };
+		56D952C72C02B01900FD77A1 /* DIYBEffectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBEffectItem.m; sourceTree = "<group>"; };
+		56D952C82C02B01900FD77A1 /* DIYBSequenceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBSequenceItem.h; sourceTree = "<group>"; };
+		56D952D02C02B03700FD77A1 /* DIYBMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBMediaPlayer.m; sourceTree = "<group>"; };
+		56D952D12C02B03700FD77A1 /* DIYBMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBMediaPlayer.h; sourceTree = "<group>"; };
+		56D952D32C02B99E00FD77A1 /* prettyxml.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = prettyxml.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +211,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D9521B2C02AB3300FD77A1 /* Foundation.framework in Frameworks */,
+				56D952172C02AB1C00FD77A1 /* AppKit.framework in Frameworks */,
+				56D9521D2C02AB3E00FD77A1 /* Cocoa.framework in Frameworks */,
+				56D952192C02AB2800FD77A1 /* CoreData.framework in Frameworks */,
+				56D952152C02AB1000FD77A1 /* AVFoundation.framework in Frameworks */,
+				56D952132C02AB0700FD77A1 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,8 +226,10 @@
 		56D951EE2C02AA7600FD77A1 = {
 			isa = PBXGroup;
 			children = (
+				56D952D32C02B99E00FD77A1 /* prettyxml.xml */,
 				56D951F92C02AA7600FD77A1 /* Sequencer3N */,
 				56D951F82C02AA7600FD77A1 /* Products */,
+				56D952112C02AB0700FD77A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,18 +244,240 @@
 		56D951F92C02AA7600FD77A1 /* Sequencer3N */ = {
 			isa = PBXGroup;
 			children = (
+				56D9521F2C02AD0700FD77A1 /* Export */,
+				56D952202C02AD0E00FD77A1 /* Visual */,
+				56D952212C02AD1600FD77A1 /* Dialogs */,
+				56D952222C02AD1F00FD77A1 /* Views */,
+				56D952232C02AD2A00FD77A1 /* Lights */,
+				56D952242C02AD3C00FD77A1 /* Items */,
+				56D952252C02AD4A00FD77A1 /* Grids */,
+				56D952262C02AD5300FD77A1 /* Effects */,
+				56D952272C02AD6700FD77A1 /* Transforms */,
+				56D952282C02AD6E00FD77A1 /* SyncView */,
+				56D9521E2C02ACFA00FD77A1 /* Preference */,
+				56D952292C02AD7800FD77A1 /* MediaPlayer */,
+				56D9522A2C02AD8300FD77A1 /* Document */,
 				56D951FA2C02AA7600FD77A1 /* AppDelegate.h */,
 				56D951FB2C02AA7600FD77A1 /* AppDelegate.m */,
-				56D951FD2C02AA7600FD77A1 /* Document.h */,
-				56D951FE2C02AA7600FD77A1 /* Document.m */,
-				56D952002C02AA7600FD77A1 /* Document.xib */,
 				56D952032C02AA7700FD77A1 /* Assets.xcassets */,
 				56D952052C02AA7700FD77A1 /* MainMenu.xib */,
 				56D952082C02AA7700FD77A1 /* Info.plist */,
 				56D952092C02AA7700FD77A1 /* main.m */,
 				56D9520B2C02AA7700FD77A1 /* Sequencer3N.entitlements */,
+				56D952A42C02AF0000FD77A1 /* Credits.rtf */,
 			);
 			path = Sequencer3N;
+			sourceTree = "<group>";
+		};
+		56D952112C02AB0700FD77A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56D9521C2C02AB3E00FD77A1 /* Cocoa.framework */,
+				56D9521A2C02AB3300FD77A1 /* Foundation.framework */,
+				56D952182C02AB2800FD77A1 /* CoreData.framework */,
+				56D952162C02AB1C00FD77A1 /* AppKit.framework */,
+				56D952142C02AB1000FD77A1 /* AVFoundation.framework */,
+				56D952122C02AB0700FD77A1 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56D9521E2C02ACFA00FD77A1 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				56D952B12C02AFEF00FD77A1 /* DIYBPrefController.h */,
+				56D952B42C02AFEF00FD77A1 /* DIYBPrefController.m */,
+				56D952B22C02AFEF00FD77A1 /* DIYBPrefController.xib */,
+				56D952B32C02AFEF00FD77A1 /* DIYBPrefData.h */,
+				56D952B52C02AFEF00FD77A1 /* DIYBPrefData.m */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		56D9521F2C02AD0700FD77A1 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				56D952602C02AE2F00FD77A1 /* DIYBExportGroup.h */,
+				56D9525F2C02AE2F00FD77A1 /* DIYBExportGroup.m */,
+				56D9525C2C02AE2E00FD77A1 /* DIYBExportItem.h */,
+				56D9525E2C02AE2F00FD77A1 /* DIYBExportItem.m */,
+				56D9525D2C02AE2E00FD77A1 /* MediaInfo.h */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		56D952202C02AD0E00FD77A1 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				56D952952C02AE7E00FD77A1 /* DIYBVisualController.h */,
+				56D952942C02AE7E00FD77A1 /* DIYBVisualController.m */,
+				56D9528D2C02AE7E00FD77A1 /* DIYBVisualController.xib */,
+				56D952922C02AE7E00FD77A1 /* DIYBVisualGroup.h */,
+				56D9528E2C02AE7E00FD77A1 /* DIYBVisualGroup.m */,
+				56D952932C02AE7E00FD77A1 /* DIYBVisualPath.h */,
+				56D9528F2C02AE7E00FD77A1 /* DIYBVisualPath.m */,
+				56D952902C02AE7E00FD77A1 /* DIYBVisualView.h */,
+				56D952912C02AE7E00FD77A1 /* DIYBVisualView.m */,
+			);
+			path = Visual;
+			sourceTree = "<group>";
+		};
+		56D952212C02AD1600FD77A1 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				56D9522B2C02AE0F00FD77A1 /* DIYBCreateGridDialog.h */,
+				56D9522C2C02AE0F00FD77A1 /* DIYBCreateGridDialog.m */,
+				56D952322C02AE0F00FD77A1 /* DIYBCreateGridDialog.xib */,
+				56D952432C02AE1000FD77A1 /* DIYBCreateSequenceItemDialog.h */,
+				56D9523E2C02AE0F00FD77A1 /* DIYBCreateSequenceItemDialog.m */,
+				56D9523D2C02AE0F00FD77A1 /* DIYBCreateSequenceItemDialog.xib */,
+				56D9522F2C02AE0F00FD77A1 /* DIYBEffectDialog.h */,
+				56D952362C02AE0F00FD77A1 /* DIYBEffectDialog.m */,
+				56D9522D2C02AE0F00FD77A1 /* DIYBEffectDialog.xib */,
+				56D952352C02AE0F00FD77A1 /* DIYBFilterController.h */,
+				56D9522E2C02AE0F00FD77A1 /* DIYBFilterController.m */,
+				56D9523F2C02AE0F00FD77A1 /* DIYBFilterController.xib */,
+				56D952412C02AE1000FD77A1 /* DIYBFilterItem.h */,
+				56D9523C2C02AE0F00FD77A1 /* DIYBFilterItem.m */,
+				56D952442C02AE1000FD77A1 /* DIYBGridBatch.h */,
+				56D952342C02AE0F00FD77A1 /* DIYBGridBatch.m */,
+				56D952312C02AE0F00FD77A1 /* DIYBGridBatch.xib */,
+				56D952392C02AE0F00FD77A1 /* DIYBRemoveGridDialog.h */,
+				56D952372C02AE0F00FD77A1 /* DIYBRemoveGridDialog.m */,
+				56D9523B2C02AE0F00FD77A1 /* DIYBRemoveGridDialog.xib */,
+				56D952302C02AE0F00FD77A1 /* DIYBRemoveSeqItemDialog.h */,
+				56D9523A2C02AE0F00FD77A1 /* DIYBRemoveSeqItemDialog.m */,
+				56D952402C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.xib */,
+				56D952382C02AE0F00FD77A1 /* DIYBTimeEntryController.h */,
+				56D952422C02AE1000FD77A1 /* DIYBTimeEntryController.m */,
+				56D952332C02AE0F00FD77A1 /* DIYBTimeEntryController.xib */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		56D952222C02AD1F00FD77A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56D952832C02AE7100FD77A1 /* DIYBBaseView.h */,
+				56D952802C02AE7100FD77A1 /* DIYBBaseView.m */,
+				56D952812C02AE7100FD77A1 /* DIYBContainerView.h */,
+				56D952772C02AE7100FD77A1 /* DIYBContainerView.m */,
+				56D9527A2C02AE7100FD77A1 /* DIYBEffectView.h */,
+				56D952762C02AE7100FD77A1 /* DIYBEffectView.m */,
+				56D952752C02AE7100FD77A1 /* DIYBGridView.h */,
+				56D952822C02AE7100FD77A1 /* DIYBGridView.m */,
+				56D9527C2C02AE7100FD77A1 /* DIYBItemEffectView.h */,
+				56D9527B2C02AE7100FD77A1 /* DIYBItemEffectView.m */,
+				56D9527E2C02AE7100FD77A1 /* DIYBItemView.h */,
+				56D9527D2C02AE7100FD77A1 /* DIYBItemView.m */,
+				56D952782C02AE7100FD77A1 /* DIYBScratchView.h */,
+				56D952842C02AE7100FD77A1 /* DIYBScratchView.m */,
+				56D952792C02AE7100FD77A1 /* DIYBTimeNowView.h */,
+				56D9527F2C02AE7100FD77A1 /* DIYBTimeNowView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56D952232C02AD2A00FD77A1 /* Lights */ = {
+			isa = PBXGroup;
+			children = (
+				56D952AA2C02AFAA00FD77A1 /* DIYBLightGroup.h */,
+				56D952A82C02AFAA00FD77A1 /* DIYBLightGroup.m */,
+				56D952AB2C02AFAA00FD77A1 /* DIYBLightSource.h */,
+				56D952AC2C02AFAA00FD77A1 /* DIYBLightSource.m */,
+				56D952AD2C02AFAA00FD77A1 /* DIYBLightStorage.h */,
+				56D952A92C02AFAA00FD77A1 /* DIYBLightStorage.m */,
+			);
+			path = Lights;
+			sourceTree = "<group>";
+		};
+		56D952242C02AD3C00FD77A1 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				56D952C12C02B01800FD77A1 /* DIYBEffectItem.h */,
+				56D952C72C02B01900FD77A1 /* DIYBEffectItem.m */,
+				56D952C62C02B01800FD77A1 /* DIYBImageCache.h */,
+				56D952BC2C02B01800FD77A1 /* DIYBImageCache.m */,
+				56D952BF2C02B01800FD77A1 /* DIYBItemController.h */,
+				56D952C32C02B01800FD77A1 /* DIYBItemController.m */,
+				56D952C02C02B01800FD77A1 /* DIYBItemController.xib */,
+				56D952C82C02B01900FD77A1 /* DIYBSequenceItem.h */,
+				56D952C52C02B01800FD77A1 /* DIYBSequenceItem.m */,
+				56D952C42C02B01800FD77A1 /* DIYBTransition.h */,
+				56D952C22C02B01800FD77A1 /* DIYBTransition.m */,
+				56D952BE2C02B01800FD77A1 /* DIYBURLCache.h */,
+				56D952BD2C02B01800FD77A1 /* DIYBURLCache.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		56D952252C02AD4A00FD77A1 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				56D952672C02AE3D00FD77A1 /* DIYBGrid.h */,
+				56D952682C02AE3D00FD77A1 /* DIYBGrid.m */,
+				56D952632C02AE3D00FD77A1 /* DIYBScratchEntry.h */,
+				56D952642C02AE3D00FD77A1 /* DIYBScratchEntry.m */,
+				56D952652C02AE3D00FD77A1 /* DIYBTimeEntry.h */,
+				56D952662C02AE3D00FD77A1 /* DIYBTimeEntry.m */,
+			);
+			path = Grids;
+			sourceTree = "<group>";
+		};
+		56D952262C02AD5300FD77A1 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				56D952592C02AE2200FD77A1 /* DIYBColor.h */,
+				56D952582C02AE2200FD77A1 /* DIYBColor.m */,
+				56D952562C02AE2200FD77A1 /* PixelEffect.h */,
+				56D952572C02AE2200FD77A1 /* PixelEffect.m */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		56D952272C02AD6700FD77A1 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				56D952712C02AE6100FD77A1 /* DIYBURLToString.h */,
+				56D952702C02AE6100FD77A1 /* DIYBURLToString.m */,
+				56D9526D2C02AE6100FD77A1 /* NSColor+Serialization.h */,
+				56D9526C2C02AE6000FD77A1 /* NSColor+Serialization.m */,
+				56D9526E2C02AE6100FD77A1 /* NSXMLDocument+Beautify.h */,
+				56D9526F2C02AE6100FD77A1 /* NSXMLDocument+Beautify.m */,
+			);
+			path = Transforms;
+			sourceTree = "<group>";
+		};
+		56D952282C02AD6E00FD77A1 /* SyncView */ = {
+			isa = PBXGroup;
+			children = (
+				56D952B92C02B00200FD77A1 /* SynchroScrollView.h */,
+				56D952BA2C02B00200FD77A1 /* SynchroScrollView.m */,
+			);
+			path = SyncView;
+			sourceTree = "<group>";
+		};
+		56D952292C02AD7800FD77A1 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				56D952D12C02B03700FD77A1 /* DIYBMediaPlayer.h */,
+				56D952D02C02B03700FD77A1 /* DIYBMediaPlayer.m */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		56D9522A2C02AD8300FD77A1 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				56D952A62C02AF2600FD77A1 /* DIYBDocument.xib */,
+				56D9529D2C02AEB600FD77A1 /* DIYBDocument.h */,
+				56D9529C2C02AEB600FD77A1 /* DIYBDocument.m */,
+				56D9529B2C02AEB600FD77A1 /* DIYBExportLight.h */,
+				56D9529E2C02AEB600FD77A1 /* DIYBExportLight.m */,
+				56D9529F2C02AEB700FD77A1 /* DIYBWindowController.h */,
+				56D952A02C02AEB700FD77A1 /* DIYBWindowController.m */,
+			);
+			path = Document;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +508,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					56D951F62C02AA7600FD77A1 = {
 						CreatedOnToolsVersion = 15.4;
@@ -131,8 +539,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				56D952042C02AA7700FD77A1 /* Assets.xcassets in Resources */,
+				56D952962C02AE7E00FD77A1 /* DIYBVisualController.xib in Resources */,
+				56D952532C02AE1000FD77A1 /* DIYBFilterController.xib in Resources */,
+				56D952CB2C02B01900FD77A1 /* DIYBItemController.xib in Resources */,
+				56D952482C02AE1000FD77A1 /* DIYBGridBatch.xib in Resources */,
+				56D952D42C02B99E00FD77A1 /* prettyxml.xml in Resources */,
+				56D952B62C02AFEF00FD77A1 /* DIYBPrefController.xib in Resources */,
 				56D952072C02AA7700FD77A1 /* Base in Resources */,
-				56D952022C02AA7600FD77A1 /* Base in Resources */,
+				56D952462C02AE1000FD77A1 /* DIYBEffectDialog.xib in Resources */,
+				56D952A52C02AF0000FD77A1 /* Credits.rtf in Resources */,
+				56D952A72C02AF2700FD77A1 /* DIYBDocument.xib in Resources */,
+				56D9524F2C02AE1000FD77A1 /* DIYBRemoveGridDialog.xib in Resources */,
+				56D952542C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.xib in Resources */,
+				56D952492C02AE1000FD77A1 /* DIYBCreateGridDialog.xib in Resources */,
+				56D9524A2C02AE1000FD77A1 /* DIYBTimeEntryController.xib in Resources */,
+				56D952512C02AE1000FD77A1 /* DIYBCreateSequenceItemDialog.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,23 +564,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D951FF2C02AA7600FD77A1 /* Document.m in Sources */,
+				56D9524C2C02AE1000FD77A1 /* DIYBEffectDialog.m in Sources */,
+				56D952A32C02AEB700FD77A1 /* DIYBWindowController.m in Sources */,
+				56D952742C02AE6100FD77A1 /* DIYBURLToString.m in Sources */,
+				56D952992C02AE7E00FD77A1 /* DIYBVisualView.m in Sources */,
+				56D9528B2C02AE7100FD77A1 /* DIYBGridView.m in Sources */,
+				56D9526B2C02AE3D00FD77A1 /* DIYBGrid.m in Sources */,
+				56D9524B2C02AE1000FD77A1 /* DIYBGridBatch.m in Sources */,
+				56D9526A2C02AE3D00FD77A1 /* DIYBTimeEntry.m in Sources */,
+				56D952732C02AE6100FD77A1 /* NSXMLDocument+Beautify.m in Sources */,
+				56D952892C02AE7100FD77A1 /* DIYBTimeNowView.m in Sources */,
+				56D952B82C02AFEF00FD77A1 /* DIYBPrefData.m in Sources */,
+				56D952552C02AE1000FD77A1 /* DIYBTimeEntryController.m in Sources */,
+				56D9525A2C02AE2200FD77A1 /* PixelEffect.m in Sources */,
+				56D9529A2C02AE7E00FD77A1 /* DIYBVisualController.m in Sources */,
+				56D952AE2C02AFAA00FD77A1 /* DIYBLightGroup.m in Sources */,
+				56D9525B2C02AE2200FD77A1 /* DIYBColor.m in Sources */,
+				56D9524E2C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.m in Sources */,
+				56D952B72C02AFEF00FD77A1 /* DIYBPrefController.m in Sources */,
+				56D952A22C02AEB700FD77A1 /* DIYBExportLight.m in Sources */,
+				56D9528C2C02AE7100FD77A1 /* DIYBScratchView.m in Sources */,
+				56D952CA2C02B01900FD77A1 /* DIYBURLCache.m in Sources */,
+				56D952BB2C02B00200FD77A1 /* SynchroScrollView.m in Sources */,
+				56D952C92C02B01900FD77A1 /* DIYBImageCache.m in Sources */,
+				56D952522C02AE1000FD77A1 /* DIYBCreateSequenceItemDialog.m in Sources */,
 				56D9520A2C02AA7700FD77A1 /* main.m in Sources */,
 				56D951FC2C02AA7600FD77A1 /* AppDelegate.m in Sources */,
+				56D952D22C02B03700FD77A1 /* DIYBMediaPlayer.m in Sources */,
+				56D952A12C02AEB700FD77A1 /* DIYBDocument.m in Sources */,
+				56D952AF2C02AFAA00FD77A1 /* DIYBLightStorage.m in Sources */,
+				56D952852C02AE7100FD77A1 /* DIYBEffectView.m in Sources */,
+				56D952872C02AE7100FD77A1 /* DIYBItemEffectView.m in Sources */,
+				56D952452C02AE1000FD77A1 /* DIYBCreateGridDialog.m in Sources */,
+				56D952472C02AE1000FD77A1 /* DIYBFilterController.m in Sources */,
+				56D9524D2C02AE1000FD77A1 /* DIYBRemoveGridDialog.m in Sources */,
+				56D952972C02AE7E00FD77A1 /* DIYBVisualGroup.m in Sources */,
+				56D952CD2C02B01900FD77A1 /* DIYBItemController.m in Sources */,
+				56D952622C02AE2F00FD77A1 /* DIYBExportGroup.m in Sources */,
+				56D952982C02AE7E00FD77A1 /* DIYBVisualPath.m in Sources */,
+				56D952612C02AE2F00FD77A1 /* DIYBExportItem.m in Sources */,
+				56D952B02C02AFAA00FD77A1 /* DIYBLightSource.m in Sources */,
+				56D952722C02AE6100FD77A1 /* NSColor+Serialization.m in Sources */,
+				56D952502C02AE1000FD77A1 /* DIYBFilterItem.m in Sources */,
+				56D952CE2C02B01900FD77A1 /* DIYBSequenceItem.m in Sources */,
+				56D952882C02AE7100FD77A1 /* DIYBItemView.m in Sources */,
+				56D952692C02AE3D00FD77A1 /* DIYBScratchEntry.m in Sources */,
+				56D952CC2C02B01900FD77A1 /* DIYBTransition.m in Sources */,
+				56D952862C02AE7100FD77A1 /* DIYBContainerView.m in Sources */,
+				56D9528A2C02AE7100FD77A1 /* DIYBBaseView.m in Sources */,
+				56D952CF2C02B01900FD77A1 /* DIYBEffectItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		56D952002C02AA7600FD77A1 /* Document.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56D952012C02AA7600FD77A1 /* Base */,
-			);
-			name = Document.xib;
-			sourceTree = "<group>";
-		};
 		56D952052C02AA7700FD77A1 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
