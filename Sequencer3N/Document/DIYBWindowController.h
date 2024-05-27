@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
-
+@class VisualSelectionController;
 @class SynchroScrollView;
 @class DIYBMediaPlayer;
 @class DIYBPrefData;
@@ -27,6 +27,8 @@
 @property (weak) IBOutlet SynchroScrollView* effectScroll;
 @property (weak) IBOutlet SynchroScrollView* sequenceItemScroll;
 @property (weak) IBOutlet DIYBMediaPlayer* mediaPlayer;
+@property (weak) IBOutlet VisualSelectionController* accessorySelection;
+
 @property (weak) IBOutlet NSStepper* stepTime;
 @property (assign,nonatomic) CGFloat dotsPerSecond;
 @property (assign,nonatomic) CGFloat scale;
@@ -55,7 +57,6 @@
 @property (strong) DIYBGridView* gridView;
 
 @property (strong) NSMutableSet* itemControllers;
-
 @property (strong) DIYBVisualController* visualController;
 @property (strong) DIYBExportGroup* exportGroup;
 
@@ -68,6 +69,9 @@
 @property (assign) BOOL shouldPlay;
 
 
+
+- (IBAction)showVisualSelection:(id)sender;
+- (IBAction)showVisuals:(id)sender ;
 - (IBAction)selectMedia:(id)sender;
 - (IBAction)clearGrid:(id)sender;
 - (IBAction)resetPlayTime:(id)sender;

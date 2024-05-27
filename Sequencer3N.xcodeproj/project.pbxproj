@@ -78,6 +78,14 @@
 		56D952CF2C02B01900FD77A1 /* DIYBEffectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952C72C02B01900FD77A1 /* DIYBEffectItem.m */; };
 		56D952D22C02B03700FD77A1 /* DIYBMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952D02C02B03700FD77A1 /* DIYBMediaPlayer.m */; };
 		56D952D42C02B99E00FD77A1 /* prettyxml.xml in Resources */ = {isa = PBXBuildFile; fileRef = 56D952D32C02B99E00FD77A1 /* prettyxml.xml */; };
+		56D952D62C03F31D00FD77A1 /* VisualSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952D52C03F31D00FD77A1 /* VisualSelection.xib */; };
+		56D952DB2C04167400FD77A1 /* VisualDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952DA2C04167400FD77A1 /* VisualDialog.xib */; };
+		56D952E62C04272100FD77A1 /* VisualDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952E52C04272100FD77A1 /* VisualDialogController.m */; };
+		56D952EA2C04ADC500FD77A1 /* AccessoryVisualController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952E92C04ADC500FD77A1 /* AccessoryVisualController.m */; };
+		56D952EC2C04B0BB00FD77A1 /* AccessoryVisual.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D952EB2C04B0BB00FD77A1 /* AccessoryVisual.xib */; };
+		56D952EF2C04BF4C00FD77A1 /* VisualSelectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952EE2C04BF4C00FD77A1 /* VisualSelectionController.m */; };
+		56D952F12C04C30400FD77A1 /* VisualEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952F02C04C30400FD77A1 /* VisualEntry.m */; };
+		56D952F52C04DED900FD77A1 /* AccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D952F42C04DED900FD77A1 /* AccessoryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +212,19 @@
 		56D952D02C02B03700FD77A1 /* DIYBMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYBMediaPlayer.m; sourceTree = "<group>"; };
 		56D952D12C02B03700FD77A1 /* DIYBMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYBMediaPlayer.h; sourceTree = "<group>"; };
 		56D952D32C02B99E00FD77A1 /* prettyxml.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = prettyxml.xml; sourceTree = "<group>"; };
+		56D952D52C03F31D00FD77A1 /* VisualSelection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisualSelection.xib; sourceTree = "<group>"; };
+		56D952DA2C04167400FD77A1 /* VisualDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisualDialog.xib; sourceTree = "<group>"; };
+		56D952E52C04272100FD77A1 /* VisualDialogController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualDialogController.m; sourceTree = "<group>"; };
+		56D952E72C042B9600FD77A1 /* VisualDialogController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualDialogController.h; sourceTree = "<group>"; };
+		56D952E82C04ACD400FD77A1 /* AccessoryVisualController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessoryVisualController.h; sourceTree = "<group>"; };
+		56D952E92C04ADC500FD77A1 /* AccessoryVisualController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessoryVisualController.m; sourceTree = "<group>"; };
+		56D952EB2C04B0BB00FD77A1 /* AccessoryVisual.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessoryVisual.xib; sourceTree = "<group>"; };
+		56D952ED2C04BE3D00FD77A1 /* VisualSelectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualSelectionController.h; sourceTree = "<group>"; };
+		56D952EE2C04BF4C00FD77A1 /* VisualSelectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualSelectionController.m; sourceTree = "<group>"; };
+		56D952F02C04C30400FD77A1 /* VisualEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualEntry.m; sourceTree = "<group>"; };
+		56D952F22C04C31600FD77A1 /* VisualEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualEntry.h; sourceTree = "<group>"; };
+		56D952F32C04DE8600FD77A1 /* AccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessoryView.h; sourceTree = "<group>"; };
+		56D952F42C04DED900FD77A1 /* AccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessoryView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +330,7 @@
 		56D952202C02AD0E00FD77A1 /* Visual */ = {
 			isa = PBXGroup;
 			children = (
+				56D952DF2C04234C00FD77A1 /* Accessory */,
 				56D952952C02AE7E00FD77A1 /* DIYBVisualController.h */,
 				56D952942C02AE7E00FD77A1 /* DIYBVisualController.m */,
 				56D9528D2C02AE7E00FD77A1 /* DIYBVisualController.xib */,
@@ -480,6 +502,26 @@
 			path = Document;
 			sourceTree = "<group>";
 		};
+		56D952DF2C04234C00FD77A1 /* Accessory */ = {
+			isa = PBXGroup;
+			children = (
+				56D952D52C03F31D00FD77A1 /* VisualSelection.xib */,
+				56D952ED2C04BE3D00FD77A1 /* VisualSelectionController.h */,
+				56D952EE2C04BF4C00FD77A1 /* VisualSelectionController.m */,
+				56D952DA2C04167400FD77A1 /* VisualDialog.xib */,
+				56D952E52C04272100FD77A1 /* VisualDialogController.m */,
+				56D952E72C042B9600FD77A1 /* VisualDialogController.h */,
+				56D952EB2C04B0BB00FD77A1 /* AccessoryVisual.xib */,
+				56D952E82C04ACD400FD77A1 /* AccessoryVisualController.h */,
+				56D952E92C04ADC500FD77A1 /* AccessoryVisualController.m */,
+				56D952F32C04DE8600FD77A1 /* AccessoryView.h */,
+				56D952F42C04DED900FD77A1 /* AccessoryView.m */,
+				56D952F02C04C30400FD77A1 /* VisualEntry.m */,
+				56D952F22C04C31600FD77A1 /* VisualEntry.h */,
+			);
+			path = Accessory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,6 +554,7 @@
 				TargetAttributes = {
 					56D951F62C02AA7600FD77A1 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -542,11 +585,14 @@
 				56D952962C02AE7E00FD77A1 /* DIYBVisualController.xib in Resources */,
 				56D952532C02AE1000FD77A1 /* DIYBFilterController.xib in Resources */,
 				56D952CB2C02B01900FD77A1 /* DIYBItemController.xib in Resources */,
+				56D952EC2C04B0BB00FD77A1 /* AccessoryVisual.xib in Resources */,
 				56D952482C02AE1000FD77A1 /* DIYBGridBatch.xib in Resources */,
+				56D952DB2C04167400FD77A1 /* VisualDialog.xib in Resources */,
 				56D952D42C02B99E00FD77A1 /* prettyxml.xml in Resources */,
 				56D952B62C02AFEF00FD77A1 /* DIYBPrefController.xib in Resources */,
 				56D952072C02AA7700FD77A1 /* Base in Resources */,
 				56D952462C02AE1000FD77A1 /* DIYBEffectDialog.xib in Resources */,
+				56D952D62C03F31D00FD77A1 /* VisualSelection.xib in Resources */,
 				56D952A52C02AF0000FD77A1 /* Credits.rtf in Resources */,
 				56D952A72C02AF2700FD77A1 /* DIYBDocument.xib in Resources */,
 				56D9524F2C02AE1000FD77A1 /* DIYBRemoveGridDialog.xib in Resources */,
@@ -564,6 +610,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D952EF2C04BF4C00FD77A1 /* VisualSelectionController.m in Sources */,
 				56D9524C2C02AE1000FD77A1 /* DIYBEffectDialog.m in Sources */,
 				56D952A32C02AEB700FD77A1 /* DIYBWindowController.m in Sources */,
 				56D952742C02AE6100FD77A1 /* DIYBURLToString.m in Sources */,
@@ -571,6 +618,7 @@
 				56D9528B2C02AE7100FD77A1 /* DIYBGridView.m in Sources */,
 				56D9526B2C02AE3D00FD77A1 /* DIYBGrid.m in Sources */,
 				56D9524B2C02AE1000FD77A1 /* DIYBGridBatch.m in Sources */,
+				56D952E62C04272100FD77A1 /* VisualDialogController.m in Sources */,
 				56D9526A2C02AE3D00FD77A1 /* DIYBTimeEntry.m in Sources */,
 				56D952732C02AE6100FD77A1 /* NSXMLDocument+Beautify.m in Sources */,
 				56D952892C02AE7100FD77A1 /* DIYBTimeNowView.m in Sources */,
@@ -583,6 +631,7 @@
 				56D9524E2C02AE1000FD77A1 /* DIYBRemoveSeqItemDialog.m in Sources */,
 				56D952B72C02AFEF00FD77A1 /* DIYBPrefController.m in Sources */,
 				56D952A22C02AEB700FD77A1 /* DIYBExportLight.m in Sources */,
+				56D952EA2C04ADC500FD77A1 /* AccessoryVisualController.m in Sources */,
 				56D9528C2C02AE7100FD77A1 /* DIYBScratchView.m in Sources */,
 				56D952CA2C02B01900FD77A1 /* DIYBURLCache.m in Sources */,
 				56D952BB2C02B00200FD77A1 /* SynchroScrollView.m in Sources */,
@@ -604,6 +653,7 @@
 				56D952982C02AE7E00FD77A1 /* DIYBVisualPath.m in Sources */,
 				56D952612C02AE2F00FD77A1 /* DIYBExportItem.m in Sources */,
 				56D952B02C02AFAA00FD77A1 /* DIYBLightSource.m in Sources */,
+				56D952F12C04C30400FD77A1 /* VisualEntry.m in Sources */,
 				56D952722C02AE6100FD77A1 /* NSColor+Serialization.m in Sources */,
 				56D952502C02AE1000FD77A1 /* DIYBFilterItem.m in Sources */,
 				56D952CE2C02B01900FD77A1 /* DIYBSequenceItem.m in Sources */,
@@ -611,6 +661,7 @@
 				56D952692C02AE3D00FD77A1 /* DIYBScratchEntry.m in Sources */,
 				56D952CC2C02B01900FD77A1 /* DIYBTransition.m in Sources */,
 				56D952862C02AE7100FD77A1 /* DIYBContainerView.m in Sources */,
+				56D952F52C04DED900FD77A1 /* AccessoryView.m in Sources */,
 				56D9528A2C02AE7100FD77A1 /* DIYBBaseView.m in Sources */,
 				56D952CF2C02B01900FD77A1 /* DIYBEffectItem.m in Sources */,
 			);
@@ -750,11 +801,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sequencer3N/Sequencer3N.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52PWP3G4T7;
+				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sequencer3N/Info.plist;
@@ -769,6 +821,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blinky.Sequencer3N;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sequencer3N/Visual/Sequencer3N-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -777,11 +832,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Sequencer3N/Sequencer3N.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52PWP3G4T7;
+				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sequencer3N/Info.plist;
@@ -796,6 +852,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.blinky.Sequencer3N;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sequencer3N/Visual/Sequencer3N-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

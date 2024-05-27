@@ -415,13 +415,6 @@
                                 </menu>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="9NO-mt-ROG"/>
-                            <menuItem title="Filter" id="XoY-xL-TVf">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="filterItems:" target="-1" id="7CU-5M-oO3"/>
-                                </connections>
-                            </menuItem>
-                            <menuItem isSeparatorItem="YES" id="ykc-XJ-Sdw"/>
                             <menuItem title="Render" id="IAV-UV-jck">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
@@ -438,9 +431,22 @@
                             <menuItem isSeparatorItem="YES" id="9Hc-hO-c7x"/>
                             <menuItem title="Visualizer" id="lnO-p9-Wja">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="showVisualizer:" target="-1" id="rKn-cb-aSv"/>
-                                </connections>
+                                <menu key="submenu" id="NHd-aK-tyL">
+                                    <items>
+                                        <menuItem title="Show" id="xE1-c2-DQi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showVisuals:" target="-1" id="LWR-JM-iTB"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Accessory" id="1pQ-gq-EYB">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showVisualSelection:" target="-1" id="72E-jt-BtG"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
                             </menuItem>
                         </items>
                     </menu>

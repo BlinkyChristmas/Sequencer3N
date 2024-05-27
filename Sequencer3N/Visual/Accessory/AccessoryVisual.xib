@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AccessoryVisualController">
+            <connections>
+                <outlet property="accessoryView" destination="Y2W-WD-lSW" id="gcU-X8-jH1"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="AA3-d3-CEn"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="872" height="444"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="5120" height="1415"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="872" height="444"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Y2W-WD-lSW" customClass="AccessoryView">
+                        <rect key="frame" x="0.0" y="0.0" width="872" height="395"/>
+                    </customView>
+                    <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iYb-HL-m7W">
+                        <rect key="frame" x="776" y="403" width="96" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="3PU-yz-5B8"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="OI8-D9-gbg">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" usesGroupingSeparator="NO" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" minimumFractionDigits="1" maximumFractionDigits="3" id="zwR-Se-AEt"/>
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="myscale" id="YE3-SW-WAx"/>
+                        </connections>
+                    </textField>
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RGT-xx-YRC">
+                        <rect key="frame" x="732" y="406" width="38" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Scale" id="OSi-qB-99W">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y2W-WD-lSW" firstAttribute="top" secondItem="iYb-HL-m7W" secondAttribute="bottom" constant="8" symbolic="YES" id="33P-qu-I3n"/>
+                    <constraint firstItem="iYb-HL-m7W" firstAttribute="trailing" secondItem="Y2W-WD-lSW" secondAttribute="trailing" id="7M9-dL-C7E"/>
+                    <constraint firstItem="iYb-HL-m7W" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="RSo-k1-8tn"/>
+                    <constraint firstAttribute="trailing" secondItem="Y2W-WD-lSW" secondAttribute="trailing" id="TM5-ih-3B1"/>
+                    <constraint firstAttribute="bottom" secondItem="Y2W-WD-lSW" secondAttribute="bottom" id="Uqo-PO-os9"/>
+                    <constraint firstItem="iYb-HL-m7W" firstAttribute="firstBaseline" secondItem="RGT-xx-YRC" secondAttribute="firstBaseline" id="dZU-Rx-ePq"/>
+                    <constraint firstItem="Y2W-WD-lSW" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="eMY-i3-Cpd"/>
+                    <constraint firstItem="iYb-HL-m7W" firstAttribute="leading" secondItem="RGT-xx-YRC" secondAttribute="trailing" constant="8" symbolic="YES" id="yED-67-pUG"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="sBM-E0-k1B"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="166"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="H0Y-Tc-b3k"/>
+    </objects>
+</document>

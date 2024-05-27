@@ -13,6 +13,8 @@
 #import "DIYBPrefData.h"
 #import "DIYBDocument.h"
 
+#import "../Visual/Accessory/VisualSelectionController.h"
+
 #import "DIYBEffectView.h"
 #import "DIYBBaseView.h"
 #import "DIYBGridView.h"
@@ -106,7 +108,9 @@ static void *RowHeightContext=&RowHeightContext;
         _prefData=[DIYBPrefData sharedInstance];
         _itemControllers=[NSMutableSet setWithCapacity:100];
         [_prefData addObserver:self forKeyPath:@"effectHeight" options:NSKeyValueObservingOptionNew context:RowHeightContext];
+        
         _visualController=[[DIYBVisualController alloc] initWithWindowNibName:@"DIYBVisualController"];
+        //[_visuals addObject:_visualController] ;
         _exportGroup=[[DIYBExportGroup alloc] init];
     }
     return self;
@@ -282,6 +286,28 @@ static void *RowHeightContext=&RowHeightContext;
     [_mediaPlayer setUpdateRate:frameRate];
     [_stepTime setIncrement:frameRate];
 }
+
+//===============================================================================
+- (IBAction)showVisualSelection:(id)sender
+{
+    [_accessorySelection setMasterController:self] ;
+    [[self window] beginSheet:[_accessorySelection window] completionHandler:^(NSModalResponse returnCode) {
+        
+    }];
+}
+//===============================================================================
+- (IBAction)showVisuals:(id)sender {
+    [_visualController showWindow:nil] ;
+    NSArray* visuals = [_accessorySelection entries] ;
+    if (visuals) {
+        NSInteger count = [visuals count] ;
+        for (NSInteger i = 0 ; i<count ; i++ ) {
+            [[visuals[i] visualController] showWindow:nil];
+        }
+    }
+}
+
+
 //===============================================================================
 - (IBAction)selectMedia:(id)sender
 {
@@ -393,7 +419,9 @@ static void *RowHeightContext=&RowHeightContext;
 //====================================================================================
 - (void)setRef1Name:(NSString *)ref1Name
 {
-    _ref1Name=[ref1Name copy];
+    //_ref1Name=[ref1Name copy];
+    _ref1Name  = [ref1Name copy] ;
+    
     if (ref1Name)
     {
         self.ref1Grid=[_seqFile.grids objectForKey:ref1Name];
@@ -949,11 +977,6 @@ static void *RowHeightContext=&RowHeightContext;
     }
 }
 //========================================================================
-- (IBAction)showVisualizer:(id)sender
-{
-    [_visualController showWindow:self];
-}
-//========================================================================
 - (IBAction)importSequence:(id)sender
 {
     NSOpenPanel * panel=[NSOpenPanel openPanel];
@@ -1064,11 +1087,20 @@ static void *RowHeightContext=&RowHeightContext;
     _seqFile.gridNames=[[_seqFile.grids allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 
 }
-
+// ===================================================================================
 - (void)windowWillClose:(NSNotification *)notification
 {
     [_mediaPlayer play:NO] ;
     [_visualController close] ;
+    NSArray* visuals = [_accessorySelection entries] ;
+    if (visuals){
+        NSInteger count = [visuals count] ;
+        for (NSInteger i = 0 ; i<count ; i++ ) {
+            [[visuals[i] visualController] close];
+            [visuals[i]  setVisualController:nil] ;
+        }
+        
+    }
 }
 //=============================================================================================
 - (IBAction)filterItems:(id)sender
@@ -1102,7 +1134,6 @@ static void *RowHeightContext=&RowHeightContext;
 
 }
 
-// =========================================================================================
 
 
 @end

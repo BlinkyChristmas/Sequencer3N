@@ -22,6 +22,7 @@
 @property (strong) NSMutableSet* sequenceItems;
 @property (strong) NSMutableDictionary* sequenceOffsets;
 @property (copy,nonatomic) NSString* visualization;
+
 - (void)addGrid:(DIYBGrid*)grid;
 - (void)removeGrid:(DIYBGrid*)grid;
 - (DIYBSequenceItem*)itemForName:(NSString*)name;
