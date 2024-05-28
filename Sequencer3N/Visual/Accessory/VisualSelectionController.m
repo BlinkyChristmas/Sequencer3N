@@ -48,6 +48,8 @@
                 [controller setVisualFile:[entry visualFile]];
                 [controller setRenderLocation:[entry renderLocation]] ;
                 if (self->_masterController) {
+                    [controller setSequenceOffsets:[self->_masterController sequenceOffsets]] ;
+                    
                     NSString* media = [self->_masterController mediaFile] ;
                     if (media) {
                         NSURL * temp = [NSURL fileURLWithPath:media];

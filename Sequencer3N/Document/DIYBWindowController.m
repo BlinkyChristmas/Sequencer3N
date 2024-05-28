@@ -119,7 +119,7 @@ static void *RowHeightContext=&RowHeightContext;
 - (void)awakeFromNib
 {
     _seqFile=self.document;
-    if (_seqFile.frameRate<(CGFloat).025)
+    if (_seqFile.frameRate< (CGFloat)0.037)
     {
         _seqFile.frameRate=[_prefData frameRate];
     }

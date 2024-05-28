@@ -112,8 +112,39 @@
     }
     return rvalue;
 }
+- (void)setSequenceOffsets:(NSDictionary *)sequenceOffsets {
+    _sequenceOffsets = sequenceOffsets ;
+    
+}
+/*
+//==============================================================================
+- (void)updateSequence
+{
+    for (DIYBVisualGroup* group in groups)
+    {
+        [group updateOffsets:_sequenceOffsets document:_sequenceDocument];
+    }
+    [self.visualView setNeedsDisplay:YES];
+    
+}
+//=========================================================================================
+- (void)configureLightForDocument:(DIYBDocument*)document
+{
+    if (_sequenceItem)
+    {
+        DIYBSequenceItem* item=[document itemForName:_sequenceItem];
+        if (item)
+        {
+            DIYBLightGroup* group=[[DIYBLightStorage sharedInstance] groupForName:item.source];
+            if (group && _lightSource)
+            {
+                _light=[group lightForName:_lightSource];
+            }
+        }
+    }
 
-
+}
+*/
 //================================================================================================
 - (void)displayFrame:(NSInteger)frameNumber {
     if (frameNumber < _frameCount) {

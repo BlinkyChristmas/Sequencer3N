@@ -30,7 +30,7 @@
     if (self) {
         // Initialization code here.
         _scale=1.0;
-        _frameRate=.50;
+        _frameRate= 0.037;
         _currentTime=0.0;
     }
     return self;

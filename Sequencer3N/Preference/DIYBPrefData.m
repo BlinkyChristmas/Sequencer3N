@@ -241,9 +241,9 @@
     _scratchColor=[self getColorForKeyword:@"SCRATCHCOLOR"];
     
     _frameRate=[user doubleForKey:@"FRAMERATE"];
-    if (_frameRate<.025)
+    if (_frameRate< 0.037)
     {
-        _frameRate=.025;
+        _frameRate = 0.037;
     }
     _maxLayer=[user integerForKey:@"MAXLAYER"];
     if (_maxLayer<5)

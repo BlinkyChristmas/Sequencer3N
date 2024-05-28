@@ -16,11 +16,13 @@
 @property (strong) NSMutableArray* groups ;
 @property (assign,nonatomic) NSInteger currentFrame ;
 @property (assign,nonatomic) CGFloat currentTime ;
-
+@property (weak,nonatomic) NSDictionary* sequenceOffsets ;
 @property (weak) IBOutlet AccessoryView* accessoryView ;
+
 -(void)loadSong:(NSString*) songName ;
 -(BOOL)loadVisual:(NSURL*) url ;
 -(void)displayFrame:(NSInteger) frameNumber;
+-(void)
 
 @end
 
